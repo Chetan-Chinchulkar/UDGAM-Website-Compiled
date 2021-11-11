@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM | Events</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./events.css">
+    <!-- <link rel="icon" href=""> -->
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <div class="main">
+        <br>
+        <br>
+        <br>
+
+        <div id="carouselExampleControls" class="carousel slide " data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item event-link">
+                <div class="row justify-content-center">
+
+                    EVENT2
+                </div>
+                
+            </div>
+            <div class="carousel-item active event-link">
+                <div class="row justify-content-center">
+
+                    LECTURE SERIES
+                </div>
+                
+            </div>
+            <div class="carousel-item event-link">
+                <div class="row justify-content-center">
+
+                    EVENT1
+                </div>
+                
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                
+                    <section class="section-padding" id="event2"style="padding-top: 120px; padding-bottom: 500px;">
+                        <div class="title" style="display: flex;justify-content: space-between;">
+                            <div>
+                                Register for Event 2
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="content" style="padding-top: 60px;">
+                            <div class="row  justify-content-between">
+                                <div class="col-7">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    YOU HEARD US FROM
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+                                                
+                                                    <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                        <input type="radio" name="options" id="option1" onclick="E2showmore()"> CAMPUS AMBASSADOR
+                                                    </label>
+                                                    
+                                                
+                                                    <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                        <input type="radio" name="options" id="option2" onclick="E2showless()"> SOCIAL MEDIA
+                                                    </label>
+            
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group CA-option" id="E2-CAReferral" style="padding-top: 30px;">
+                                            <label for="inputAddress">CA REFERRAL ID</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="6969696">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    Do you want to confirm your Registration?
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=" row justify-content-between">
+                                            <div class="form-group col-md-6" >
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER AND PAY</button>
+                                                </a>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-light back-btn" style="color: white;width: 21.75vw;">GO BACK</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            
+                                <div class="col-4 align-self-center" style="border: solid 1px #C4C4C4;">
+                                    <img src="" class="img-fluid" alt="" width="400" height="400" style="background-color: white; padding-right: 10px;">
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="carousel-item active">
+                    
+                    <section class="section-padding" id="ls"style="padding-top: 120px; padding-bottom: 500px;">
+                        <div class="title" style="display: flex;justify-content: space-between;">
+                            <div>
+                                Register for Lecture Series
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="content" style="padding-top: 60px;">
+                            <div class="row  justify-content-between">
+                                <div class="col-7">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    YOU HEARD US FROM
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+                                                
+                                                    <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                        <input type="radio" name="options" id="option1" onclick="LSshowmore()"> CAMPUS AMBASSADOR
+                                                    </label>
+                                                    
+                                                
+                                                    <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                        <input type="radio" name="options" id="option2" onclick="LSshowless()"> SOCIAL MEDIA
+                                                    </label>
+            
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group  CA-option" id="LS-CAReferral">
+                                            <label for="inputAddress">CA REFERRAL ID</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="6969696">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    Do you want to confirm your Registration?
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=" row justify-content-between">
+                                            <div class="form-group col-md-6" >
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER AND PAY</button>
+                                                </a>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-light back-btn" style="color: white;width: 21.75vw;">GO BACK</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            
+                                <div class="col-4 align-self-center" style="border: solid 1px #C4C4C4;">
+                                    <img src="" class="img-fluid" alt="" width="400" height="400" style="background-color: white; padding-right: 10px;">
+                                </div>
+                            
+    
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+                
+                <div class="carousel-item">
+                    
+                    <section class="section-padding" id="event1"style="padding-top: 120px; padding-bottom: 500px;">
+                        <div class="title" style="display: flex;justify-content: space-between;">
+                            <div>
+                                Register for Event 1
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="content" style="padding-top: 60px;">
+                            <div class="row  justify-content-between">
+                                <div class="col-7">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    YOU HEARD US FROM
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+                                                
+                                                    <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                        <input type="radio" name="options" id="option1" onclick="E1showmore()"> CAMPUS AMBASSADOR
+                                                    </label>
+                                                    
+                                                
+                                                    <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                        <input type="radio" name="options" id="option2" onclick="E1showless()"> SOCIAL MEDIA
+                                                    </label>
+            
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="form-group  CA-option" id="E1-CAReferral">
+                                            <label for="inputAddress">CA REFERRAL ID</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="6969696">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="" style="padding-left: 5px;">
+                                                    Do you want to confirm your Registration?
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=" row justify-content-between">
+                                            <div class="form-group col-md-6" >
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER AND PAY</button>
+                                                </a>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <a href="#">
+                                                    <button type="button" class="btn btn-light back-btn" style="color: white;width: 21.75vw;">GO BACK</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            
+                                <div class="col-4 align-self-center" style="border: solid 1px #C4C4C4;">
+                                    <img src="" class="img-fluid" alt="" width="400" height="400" style="background-color: white; padding-right: 10px;">
+                                </div>
+                            
+    
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        
+
+
+        <!-- footer -->
+        <section>
+            <hr style="margin: 0;background-color: white;">
+            
+            <div class="contactus" style="margin-bottom: 80px;margin-top: 50px;">
+                <div id="footer_main" class="container row">
+                    <div id="" style="display: flex; width: 100%; padding-bottom:5%; padding-top:3%">
+                        <div class="" style="font-style: Texta;">
+                            <span style="font-size:200%">UDGAM 2022 </span><br>
+                            <span>COSMOS OF ENDEAVOURS </span><br><br>
+                            <span>FAQ • Contact us</span><br>
+                            <span>udgam@iitg.ac.in </span><br>
+                        </div>
+                        <div style="margin-right: 36vw;"></div>
+                        <div class="" style=" text-align: right; display: flex; flex-direction:column; align-content: flex-end;">
+                            <span>Don’t miss the magic</span>
+                            <span>Sign up to receive event updates and notifications.</span><br>
+                            <form action="/action_page.php">
+                                <input type="id" id="emailid" name="fname" style="background-color: transparent; border: 2px solid white; padding-right: 10%; margin-right: 2%;">
+                                <input type="submit" value="Submit" style="color: black; background-color: white; border: 0px; margin-top:1vw; padding-top:0.8%; padding-bottom: 0.8%; padding-left: 5%; padding-right: 5%;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr style="margin: 0; background-color: white;">
+            <div class="footer">
+                <div id="footer_main" class="container row">
+                    <div id="footer_container">
+                        <div id="footer_content">
+                            Copyright © 2022 UDGAM Creatives, All rights reserved.
+                        </div>
+                        <div id="footer_icons">
+                            <a href="https://www.facebook.com/ecell.iitg/" id="footer_icons2" target="_blank">
+                                <img class="facebook button" src="static files\facebook.svg" style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://twitter.com/ecelliitg" id="footer_icons2" target="_blank">
+                                <img class="twitter button" src="static files\twitter.svg" style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.linkedin.com/company/ecell-iitg/" id="footer_icons2" target="_blank">
+                                <img class="linkedin button" src="static files\linkedin.svg" style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.instagram.com/ecell_iitg/" id="footer_icons2" target="_blank">
+                                <img class="discord button" src="static files\instagram.svg" style="width: 32px; height:32px;">
+                            </a>
+                            <a href="https://www.youtube.com/user/iitgedc" id="footer_icons2" target="_blank">
+                                <img class="discord button" src="static files\youtube.svg" style="width: 32px; height:32px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script>
+         $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+    </script>
+    <script>
+        $('#carouselExampleControls').carousel();
+
+    </script>
+    
+    <script>
+        $('.carousel-control-prev').on('click', function(e) {
+            e.preventDefault()
+        $('.carousel').carousel('prev')
+            })
+    </script>
+    <script>
+        $('.carousel-control-next').on('click', function(e) {
+            e.preventDefault()
+        $('.carousel').carousel('next')
+            })
+    </script>
+    <script>
+        function E2showmore(){
+            document.getElementById("E2-CAReferral").style.display = 'block';
+            
+        }
+        function E2showless(){
+            document.getElementById("E2-CAReferral").style.display = 'none';
+        }
+    </script>
+    <script>
+        function LSshowmore(){
+            document.getElementById("LS-CAReferral").style.display = 'block';
+            
+        }
+        function LSshowless(){
+            document.getElementById("LS-CAReferral").style.display = 'none';
+        }
+    </script>
+    <script>
+        function E1showmore(){
+            document.getElementById("E1-CAReferral").style.display = 'block';
+            
+        }
+        function E1showless(){
+            document.getElementById("E1-CAReferral").style.display = 'none';
+        }
+    </script>
+</body>
+</html>
