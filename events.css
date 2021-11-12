@@ -243,6 +243,68 @@ body {
 
 }
 
+
+
+@media (max-width : 768px) {
+    .ProfilePic{
+        /* margin: auto; */
+        display: inlineblock;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+        margin : 0;
+    }
+
+    #ProfilePic{
+        width: 30vw; 
+        height: 30vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+#ProfilePic{
+    width: 29vw; 
+    height: 29vw;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.RegistrationDetails{
+    /* margin-left: 10vw; */
+    display : flex;
+    flex-direction : column;
+    justify-content:center;
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+label{
+    color: #00B0E0;
+    margin-bottom: 1vh;
+}
+
+input{
+    background: transparent;
+    color : white;
+    border: 1px solid white;
+    margin-bottom: 1vh !important;
+    height: 40px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+button{
+    background-color: transparent; 
+    border: 1px solid white;
+}
+
+
+
 #footer_icons{
    
     padding-left: 45%;
