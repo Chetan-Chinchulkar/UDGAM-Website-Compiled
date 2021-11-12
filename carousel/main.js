@@ -52,6 +52,15 @@ const persons = [{
     reg_link: 'www.music.youtube.com',
     reg_dead: 'GOOGOGOGOGOGO[event 4]',
     team: 'INDIVISUAL[event 4]',
+},
+{
+    name: 'Event 5',
+    date: 'DATEDATEDATE5',
+    paragraph: '[Event 5]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
+    image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"',
+    reg_link: 'www.music.youtube.com',
+    reg_dead: 'GOOGOGOGOGOGO[event 5]',
+    team: 'INDIVISUAL[event 5]',
 }
 ];
 
