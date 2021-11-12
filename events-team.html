@@ -56,6 +56,8 @@
         </div>
 
         <div class="carousel">
+            
+            
             <section class="section-padding" style="padding-top: 120px; padding-bottom: 500px;">
                 
                     <div class="title">
@@ -65,7 +67,17 @@
                         
                     </div>
                     
-            
+                    <!--
+                        to be hidden (to make work main.js)
+                    
+                    <div id="page-header" style="display: none;" ></div>
+                    <div id="reg-img" style="display: none;"></div>
+                    <div id="paragraph" style="display: none;" ></div>
+                    <div id="team" style="display: none;" ></div>
+                    <div id="ev-date" style="display: none;" ></div>
+                    <div id="reg-dead" style="display: none;"></div>
+                    <div id="reg-link" style="display: none;"></div>
+                    -->
 
                     <div class="container content">
                         <div class="row" style="justify-content: space-between;">
@@ -80,8 +92,8 @@
                                 <input type="text" id="leaderphone" name="leaderphone" placeholder="DUMMY TEXT">
                                 <br>
                             </form>
-                            <div class="col-sm-5 ProfilePic" >
-                                <img id="ProfilePic" height="200" width="400" src ="Static Files\img_avatar.png">
+                            <div class="col-sm-5 ProfilePic page__img" id="page-img" >
+                                <img  id="ProfilePic" height="200" width="400" src ="Static Files\img_avatar.png">
                             </div>
                         </div>
                     </div>
@@ -193,9 +205,9 @@
                                     </div>
                                     <div class="row justify-content-between">
                                         <div class="form-group col-md-6" >
-                                            <a href="#">
-                                                <button type="button" class="btn btn-primary" style="width:100%">REGISTER AND PAY</button>
-                                            </a>
+                                            <div id="reg-link">
+                                                <button type="button" class="btn btn-primary" style="width: 100%;">REGISTER & PAY</button>
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <a href="#">
