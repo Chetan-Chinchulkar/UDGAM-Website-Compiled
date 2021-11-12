@@ -57,8 +57,11 @@
         </div>
 
         <div class="carousel">
-            <div class="page">
-                <div class="page-header title" id="page-header">
+            
+            
+            
+            <div class="page"  id="pg-content-reg" >
+                <div class="page-header title" id="page-header" style="padding-top: 120px;">
 
                 </div>
                 <br>
@@ -66,430 +69,140 @@
                 <br>
                 <br>
                 <br>
-                <div class="page-body" id="page-body">
-                    <div class="page_content row justify-content-between">
-                        <p class="page_paragraph col-6" id='paragraph'>
+                <div class="pg-content-reg" style="padding-top: 161px; padding-bottom: 500px;">
 
-                        </p>
-                        <div class="col-4 align-self-center page__img" id="page-img" style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
-                            
+                    <div class="page-body" id="page-body">
+                        <div class="page_content row justify-content-between">
+                            <p class="page_paragraph col-6" id='paragraph'>
+
+                            </p>
+                            <div class="col-4 align-self-center page__img" id="page-img" style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <section class="section-padding" style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
-                    <div class="row justify-content-between" style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
-                        <div class="col-3 align-self-start" style="border-right: solid 1px white;">
-                            <div class="head">
-                                REG. DEADLINE
-                            </div>
-                            <div class="reg-dead" id="reg-dead">
-                                
-                            </div>
-                        </div>
-                        <div class="col-2 align-self-start" style="border-right: solid 1px white;">
-                            <div class="head">
-                                TEAM SIZE
-                            </div>
-                            <div class="team" id="team">
-                                
-                            </div>
-                        </div>
-                        <div class="col-3 align-self-start" style="border-right: solid 1px white;">
-                            <div class="head">
-                                DATE
-                            </div>
-                            <div class="ev-date" id="ev-date">
-                                
-                            </div>
-                        </div>
-                        <div class="col-3 align-self-center">
-                            <div class="row justify-content-center">
-        
-                                <button type="button" class="reg-link" id="reg-link" class="btn btn-primary" style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
+                    <section class="section-padding" style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
+                        <div class="row justify-content-between" style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
+                            <div class="col-3 align-self-start" style="border-right: solid 1px white;">
+                                <div class="head">
+                                    REG. DEADLINE
+                                </div>
+                                <div class="reg-dead" id="reg-dead">
                                     
-
-                                </button>
+                                </div>
                             </div>
+                            <div class="col-2 align-self-start" style="border-right: solid 1px white;">
+                                <div class="head">
+                                    TEAM SIZE
+                                </div>
+                                <div class="team" id="team">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-3 align-self-start" style="border-right: solid 1px white;">
+                                <div class="head">
+                                    DATE
+                                </div>
+                                <div class="ev-date" id="ev-date">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-3 align-self-center">
+                                <div class="row justify-content-center">
+            
+                                    <button onclick="register()" type="button"  class="btn btn-primary" style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
+                                        REGISTER
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="ev-register" id="ev-register">
+                <section class="section-padding" id="ls" style="padding-top: 120px; padding-bottom: 500px;">
+                    <div class="title" style="display: flex;justify-content: start;">
+                        <div>
+                            Register for
+                        </div>
+                        <div id="reg-title" style="padding-left: 10px;">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="content" style="padding-top: 60px;">
+                        <div class="row  justify-content-between">
+                            <div class="col-7">
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="" style="padding-left: 5px;">
+                                                YOU HEARD US FROM
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
+                                            
+                                                <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                    <input type="radio" name="options" id="option1" onclick="showmore()"> CAMPUS AMBASSADOR
+                                                </label>
+                                                
+                                            
+                                                <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                    <input type="radio" name="options" id="option2" onclick="showless()"> SOCIAL MEDIA
+                                                </label>
+        
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group  CA-option" id="CAReferral">
+                                        <label for="inputAddress">CA REFERRAL ID</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="6969696">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="" style="padding-left: 5px;">
+                                                Do you want to confirm your Registration?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=" row justify-content-between">
+                                        <div class="form-group col-md-6" >
+                                                <div id="reg-link">
+
+                                                </div>
+                                                
+                                            
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <a href="#">
+                                                <button onclick="reg_back()" type="button" class="btn btn-light back-btn" style="color: white;width: 21.75vw;">GO BACK</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                            
+                            <div class="col-4 align-self-center page__img" id="reg-img" style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+                            
+                            </div>
+
                         </div>
                     </div>
                 </section>
             </div>
 
+
+
+            
+
             
         </div>
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-
-
-
-
-
-
-
-        <!-- <div id="carouselExampleControls" class="carousel slide  carousel-fade" data-interval="false"
-            data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item event-link">
-                    <div class="row justify-content-center">
-
-                        EVENT2
-                    </div>
-
-                </div>
-                <div class="carousel-item active event-link">
-                    <div class="row justify-content-center">
-
-                        LECTURE SERIES
-                    </div>
-
-                </div>
-                <div class="carousel-item event-link">
-                    <div class="row justify-content-center">
-
-                        EVENT1
-                    </div>
-
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> -->
-
-        <!-- <div id="carouselExampleControls" class="carousel slide carousel-fade" data-interval="false"
-            data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item">
-
-                    <section class="section-padding" id="event1">
-                        <section class="section-padding" style="margin-top: 120px;">
-                            <div class="title" style="display: flex;justify-content: space-between;">
-                                <div>
-                                    EVENT 2
-                                </div>
-
-
-                                <div class="d-flex align-items-end" style="font-size: 25px;font-weight: 300;">
-                                    DATEDATEDATE
-                                </div>
-
-                            </div>
-                            <br><br><br>
-                            <div class="row justify-content-between">
-                                <div class="col">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                </div>
-                                <div class="col align-self-center"
-                                    style="border: solid 1px #C4C4C4; background-color: white;height: 55vh !important;;">
-                                    <img src="" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="section-padding"
-                            style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
-                            <div class="row justify-content-between"
-                                style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
-                                <div class="col-3 align-self-start">
-                                    <div class="head">
-                                        REG. DEADLINE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-2 align-self-start">
-                                    <div class="head">
-                                        TEAM SIZE
-                                    </div>
-                                    <div class="context">
-                                        INDIVISUAL
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-start">
-                                    <div class="head">
-                                        DATE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-center">
-                                    <div class="row justify-content-center">
-
-
-                                        <button type="button" class="btn btn-primary" style="background-color: 
-                                      #00B0E0;width: 200px;
-                                      font-style: normal;
-          
-                                      font-size: 30px;
-                                      line-height: 40px;
-                                      /* identical to box height */
-          
-          
-                                      color: #FFFFFF;
-          
-          
-                                      /* Inside Auto Layout */
-          
-                                      flex: none;
-                                      order: 0;
-                                      flex-grow: 0;
-                                      margin: 0px 9.06433px;">REGISTER</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-                </div>
-                <div class="carousel-item active">
-
-                    <section class="section-padding" id="ls">
-
-
-                        <section class="section-padding" style="margin-top: 120px;">
-                            <div class="title" style="display: flex;justify-content: space-between;">
-                                <div>
-                                    LECTURE SERIES
-                                </div>
-
-
-                                <div class="d-flex align-items-end" style="font-size: 25px;font-weight: 300;">
-                                    DATEDATEDATE
-                                </div>
-
-                            </div>
-                            <br><br><br>
-                            <div class="row justify-content-between">
-                                <div class="col">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                </div>
-                                <div class="col align-self-center"
-                                    style="border: solid 1px #C4C4C4; background-color: white;height: 55vh !important;;">
-                                    <img src="" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="section-padding"
-                            style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
-                            <div class="row justify-content-between"
-                                style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
-                                <div class="col-3 align-self-start border-right">
-                                    <div class="head">
-                                        REG. DEADLINE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-2 align-self-start border-right">
-                                    <div class="head">
-                                        TEAM SIZE
-                                    </div>
-                                    <div class="context">
-                                        INDIVISUAL
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-start border-right">
-                                    <div class="head">
-                                        DATE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-center">
-                                    <div class="row justify-content-center">
-
-                                        <button type="button" class="btn btn-primary" style="background-color: 
-                                    #00B0E0;width: 200px;
-                                    font-style: normal;
-        
-                                    font-size: 30px;
-                                    line-height: 40px;
-                                    /* identical to box height */
-        
-        
-                                    color: #FFFFFF;
-        
-        
-                                    /* Inside Auto Layout */
-        
-                                    flex: none;
-                                    order: 0;
-                                    flex-grow: 0;
-                                    margin: 0px 9.06433px;">REGISTER</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-                </div>
-                <div class="carousel-item">
-
-                    <section class="section-padding" id="event2">
-                        <section class="section-padding" style="margin-top: 120px;">
-                            <div class="title" style="display: flex;justify-content: space-between;">
-                                <div>
-                                    EVENT 1
-                                </div>
-
-
-                                <div class="d-flex align-items-end" style="font-size: 25px;font-weight: 300;">
-                                    DATEDATEDATE
-                                </div>
-
-                            </div>
-                            <br><br><br>
-                            <div class="row justify-content-between">
-                                <div class="col">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolor odit nulla,
-                                        distinctio sequi magnam quisquam? Obcaecati reprehenderit praesentium sed quos
-                                        tempore. Error tenetur, voluptates excepturi vero vel corporis molestias?
-                                    </p>
-                                </div>
-                                <div class="col align-self-center"
-                                    style="border: solid 1px #C4C4C4; background-color: white;height: 55vh !important;;">
-                                    <img src="" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="section-padding"
-                            style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
-                            <div class="row justify-content-between"
-                                style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
-                                <div class="col-3 align-self-start">
-                                    <div class="head">
-                                        REG. DEADLINE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-2 align-self-start">
-                                    <div class="head">
-                                        TEAM SIZE
-                                    </div>
-                                    <div class="context">
-                                        INDIVISUAL
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-start">
-                                    <div class="head">
-                                        DATE
-                                    </div>
-                                    <div class="context">
-                                        GOOGOGOGOGOGO
-                                    </div>
-                                </div>
-                                <div class="col-3 align-self-center">
-                                    <div class="row justify-content-center">
-
-                                        <button type="button" class="btn btn-primary" style="background-color: 
-                                    #00B0E0;width: 200px;
-                                    font-style: normal;
-
-                                    font-size: 30px;
-                                    line-height: 40px;
-                                    /* identical to box height */
-
-
-                                    color: #FFFFFF;
-
-
-                                    /* Inside Auto Layout */
-
-                                    flex: none;
-                                    order: 0;
-                                    flex-grow: 0;
-                                    margin: 0px 9.06433px;">REGISTER</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-                </div>
-            </div>
-
-        </div> -->
-
-
-
-
-
 
         <!-- footer -->
         <section>
@@ -573,22 +286,31 @@
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
         });
     </script>
-    <script>
-        $('#carouselExampleControls').carousel();
-
+     <script>
+        function showmore(){
+            document.getElementById("CAReferral").style.display = 'block';
+            
+        }
+        function showless(){
+            document.getElementById("CAReferral").style.display = 'none';
+        }
     </script>
 
     <script>
-        $('.carousel-control-prev').on('click', function (e) {
-            e.preventDefault()
-            $('.carousel').carousel('prev')
-        })
-    </script>
-    <script>
-        $('.carousel-control-next').on('click', function (e) {
-            e.preventDefault()
-            $('.carousel').carousel('next')
-        })
+        function register() {
+            let show = document.getElementById('ev-register');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('pg-content-reg');
+            hide.style.display = 'none';
+        }
+        function reg_back() {
+            let show = document.getElementById('pg-content-reg');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('ev-register');
+            hide.style.display = 'none';
+        }
     </script>
 
 </body>

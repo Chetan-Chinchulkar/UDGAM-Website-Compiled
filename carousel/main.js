@@ -4,11 +4,14 @@ const pageHeader = document.getElementById('page-header');
 const pageBody = document.getElementById('page-body');
 
 const pageImg = document.getElementById('page-img');
+const regImg = document.getElementById('reg-img');
 
 const pageRegDead = document.getElementById('reg-dead');
 const pageTeam = document.getElementById('team');
 const pageEv_date = document.getElementById('ev-date');
 const pageReg_link = document.getElementById('reg-link');
+
+const pageReg_Title = document.getElementById('reg-title');
 
 const prevElement = document.getElementById('prev');
 const currentElement = document.getElementById('current');
@@ -19,7 +22,7 @@ const persons = [{
     date: 'DATEDATEDATE1',
     paragraph: '[Event 1]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
     image: 'https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300',
-    reg_link: '#',
+    reg_link: 'www.youtube.com',
     reg_dead: 'GOOGOGOGOGOGO[event 1]',
     team: 'INDIVISUAL[event 1]',
 },
@@ -28,7 +31,7 @@ const persons = [{
     date: 'DATEDATEDATE2',
     paragraph: '[Event 2]Throughout the long history of horror movies, there have been memorable moments and iconic scenes that have made viewers\' skin crawl and hearts pound. Many of these moments contain lines of dialogue that remain entrenched in the lore of horror movie history.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
     image: 'https://images.unsplash.com/photo-1545996124-0501ebae84d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
-    reg_link: '#',
+    reg_link: 'www.google.com',
     reg_dead: 'GOOGOGOGOGOGO[event 2]',
     team: 'INDIVISUAL[event 2]',
 },
@@ -37,7 +40,7 @@ const persons = [{
     date: 'DATEDATEDATE3',
     paragraph: '[Event 3]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
     image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"',
-    reg_link: '#',
+    reg_link: 'www.duckduckgo.com',
     reg_dead: 'GOOGOGOGOGOGO[event 3]',
     team: 'INDIVISUAL[event 3]',
 },
@@ -46,7 +49,7 @@ const persons = [{
     date: 'DATEDATEDATE4',
     paragraph: '[Event 4]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
     image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"',
-    reg_link: '#',
+    reg_link: 'www.music.youtube.com',
     reg_dead: 'GOOGOGOGOGOGO[event 4]',
     team: 'INDIVISUAL[event 4]',
 }
@@ -86,14 +89,16 @@ function loadApp() {
         pageHeader.innerHTML += pageName + pageDate;
         let pageImage = `
             <div class="page-image ${activePage !== index ? 'disabled' : ''}">
-                <img src="${image}" class="img-fluid" alt="Image" width="400">
+                <img src="${image}" class="img-fluid" alt="Image" height="1000">
             </div>
         
         `;
         pageImg.innerHTML += pageImage;
+        
+        regImg.innerHTML += pageImage;
 
     });
-    let eventRegisterButton = `<a href = "${persons[activePage].reg_link}">REGISTER</a>`;
+    let eventRegisterButton = `<a href = "${persons[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
     paragraphElement.innerHTML = persons[activePage].paragraph;
 
     pageTeam.innerHTML = persons[activePage].team;
@@ -101,6 +106,10 @@ function loadApp() {
     
     pageRegDead.innerHTML = persons[activePage].reg_dead;
     pageReg_link.innerHTML = eventRegisterButton;
+
+    let eventTitle = `${persons[activePage].name}`;
+    pageReg_Title.innerHTML = eventTitle;
+
     prevElement.innerHTML = `${getPrevName(activePage)}`;
     currentElement.innerHTML = `${persons[activePage].name}`;
     nextElement.innerHTML = `${getnextName(activePage)}`;
@@ -190,12 +199,17 @@ function changeSlider(next) {
         
         `;
 
-    let eventRegisterButton = `<a href = "${persons[id].reg_link}">REGISTER</a>`;
+    let eventRegisterButton = `<a href = "${persons[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
+
+    let eventTitle = `<div> ${persons[id].name} </div>`;
 
     paragraphElement.textContent = persons[id].paragraph;
     pageImg.innerHTML = pageImage;
+    regImg.innerHTML = pageImage;
     pageRegDead.innerText = persons[id].reg_dead;
     pageTeam.innerText = persons[id].team;
     pageEv_date.innerText = persons[id].date;
     pageReg_link.innerHTML = eventRegisterButton;
+
+    pageReg_Title.innerHTML = eventTitle;
 }
