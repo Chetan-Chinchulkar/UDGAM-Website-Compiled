@@ -2,16 +2,16 @@
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
 body {
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; */
   /* IE and Edge */
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   /* Firefox */
 }
 
@@ -809,6 +809,70 @@ main {
 }
 
 /* ---------------------------------------------------------------------------*/
+
+
+/* ################################### UDGAM logo styling ######################################### */
+.events-head-title {
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+}
+.events-head-body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+.events-head-list-title {
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+
+#internfair-event-div,
+#internfair-event-line,
+#lectureseries-event-div,
+#lectureseries-event-line,
+#pmx-event-div,
+#pmx-event-line,
+#workshops-event-div,
+#workshops-event-line,
+#disrupt-event-line {
+  stroke: white;
+}
+#disrupt-event-div {
+   fill:white;
+}
+@media (max-width: 1450px) {
+  .events-position-right {
+    left: 710px !important;
+  }
+}
+@media (max-width: 150000px) {
+  #events-head-phone{
+    display:none;
+  }
+  #events-head-desktop{
+    display:block;
+  }
+}
+@media (max-width: 1200px) {
+  #events-head-phone{
+    display:block;
+  }
+  #events-head-desktop{
+    display:none;
+  }
+}
+
+
+
+/* ---------------------------------------------------------------------------*/
+
 
 /* ################################### more events styling ######################################### */
 
