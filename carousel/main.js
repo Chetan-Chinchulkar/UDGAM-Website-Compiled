@@ -297,7 +297,7 @@ function changeSlider(next) {
         
         `;
 
-    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
+    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary reg-pay" style="width: 100%;">REGISTER & PAY</button></a>`;
 
     let eventTitle = `<div> ${events_home[id].name} </div>`;
 
