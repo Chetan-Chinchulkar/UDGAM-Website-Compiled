@@ -850,11 +850,21 @@ body.modal-open> .main,.modal-backdrop.fade.show {
     }
 
     .modalspeaker__img {
-        padding-left: 10%;
+        padding-left: 5%;
         padding-top: 10%;
         padding-right: 5%;
         padding-bottom: 0%;
-        width: 50%;
+        width: 50% !important; 
+    }
+
+    .modal-content .row{
+        margin-right:0%;
+        margin-left: 0%;
+    }
+
+    .modal-content img{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
