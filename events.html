@@ -13,7 +13,8 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="./events.css"><link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./events.css">
+    <link rel="stylesheet" href="./index.css">
     <!-- <link rel="icon" href=""> -->
 
     <!-- link for font awesome -->
@@ -34,7 +35,7 @@
 
         <div class="row  justify-content-between" style="display: flex; align-items: center;">
             <div class="col-3" style="display: flex;justify-content: start;">
-                <button onclick=sliderPrev()><i class="fas fa-arrow-left" > </i></button>
+                <button onclick="sliderPrev('events')"><i class="fas fa-arrow-left"> </i></button>
             </div>
             <div class="col-2" style="display: flex;justify-content: center;">
                 <span id="prev" class="event-link"></span>
@@ -49,18 +50,18 @@
 
             </div>
             <div class="col-3" style="display: flex;justify-content: end;">
-                <button onclick=sliderNext()><i class="fas fa-arrow-right"  ></i></button>
+                <button onclick="sliderPrev('events')"><i class="fas fa-arrow-right"></i></button>
 
             </div>
-            
+
 
         </div>
 
         <div class="carousel">
-            
-            
-            
-            <div class="page"  id="pg-content-reg" >
+
+
+
+            <div class="page" id="pg-content-reg">
                 <div class="page-header title" id="page-header" style="padding-top: 120px;">
 
                 </div>
@@ -76,20 +77,23 @@
                             <p class="page_paragraph col-6" id='paragraph'>
 
                             </p>
-                            <div class="col-4 align-self-center page__img" id="page-img" style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
-                                
+                            <div class="col-4 align-self-center page__img" id="page-img"
+                                style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+
                             </div>
                         </div>
                     </div>
 
-                    <section class="section-padding" style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
-                        <div class="row justify-content-between" style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
+                    <section class="section-padding"
+                        style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
+                        <div class="row justify-content-between"
+                            style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
                             <div class="col-3 align-self-start" style="border-right: solid 1px white;">
                                 <div class="head">
                                     REG. DEADLINE
                                 </div>
                                 <div class="reg-dead" id="reg-dead">
-                                    
+
                                 </div>
                             </div>
                             <div class="col-2 align-self-start" style="border-right: solid 1px white;">
@@ -97,7 +101,7 @@
                                     TEAM SIZE
                                 </div>
                                 <div class="team" id="team">
-                                    
+
                                 </div>
                             </div>
                             <div class="col-3 align-self-start" style="border-right: solid 1px white;">
@@ -105,18 +109,19 @@
                                     DATE
                                 </div>
                                 <div class="ev-date" id="ev-date">
-                                    
+
                                 </div>
                             </div>
                             <div class="col-3 align-self-center">
                                 <div class="row justify-content-center">
                                     <a href="#ev-register">
-                                        <button onclick="register()"type="button"  class="btn btn-primary" style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
+                                        <button onclick="register()" type="button" class="btn btn-primary"
+                                            style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
                                             REGISTER
-    
+
                                         </button>
                                     </a>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -130,11 +135,11 @@
                             Register for
                         </div>
                         <div id="reg-title" style="padding-left: 10px;">
-                            
+
                         </div>
-                        
+
                     </div>
-                    
+
                     <div class="content" style="padding-top: 60px;">
                         <div class="row  justify-content-between">
                             <div class="col-7">
@@ -148,18 +153,20 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group btn-group btn-group-toggle col" data-toggle="buttons">
-                                            
-                                                <label class="btn btn-secondary active" style="padding-right: 10px;">
-                                                    <input type="radio" name="options" id="option1" onclick="showmore()"> CAMPUS AMBASSADOR
-                                                </label>
-                                                
-                                            
-                                                <label class="btn btn-secondary" style="padding-left: 10px;">
-                                                    <input type="radio" name="options" id="option2" onclick="showless()"> SOCIAL MEDIA
-                                                </label>
-        
+
+                                            <label class="btn btn-secondary active" style="padding-right: 10px;">
+                                                <input type="radio" name="options" id="option1" onclick="showmore()">
+                                                CAMPUS AMBASSADOR
+                                            </label>
+
+
+                                            <label class="btn btn-secondary" style="padding-left: 10px;">
+                                                <input type="radio" name="options" id="option2" onclick="showless()">
+                                                SOCIAL MEDIA
+                                            </label>
+
                                         </div>
-                                        
+
                                     </div>
                                     <div class="form-group  CA-option" id="CAReferral">
                                         <label for="inputAddress">CA REFERRAL ID</label>
@@ -173,25 +180,28 @@
                                         </div>
                                     </div>
                                     <div class=" row justify-content-between">
-                                        <div class="form-group col-md-6" >
-                                                <div id="reg-link">
+                                        <div class="form-group col-md-6">
+                                            <div id="reg-link">
 
-                                                </div>
-                                                
-                                            
+                                            </div>
+
+
                                         </div>
                                         <div class="form-group col-md-6">
                                             <a href="#">
-                                                <button onclick="reg_back()" type="button" class="btn btn-light back-btn" style="color: white;width: 21.75vw;">GO BACK</button>
+                                                <button onclick="reg_back()" type="button"
+                                                    class="btn btn-light back-btn"
+                                                    style="color: white;width: 21.75vw;">GO BACK</button>
                                             </a>
                                         </div>
                                     </div>
                                 </form>
-                                
+
                             </div>
-                            
-                            <div class="col-4 align-self-center page__img" id="reg-img" style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
-                            
+
+                            <div class="col-4 align-self-center page__img" id="reg-img"
+                                style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
+
                             </div>
 
                         </div>
@@ -201,9 +211,9 @@
 
 
 
-            
 
-            
+
+
         </div>
 
         <!-- footer -->
@@ -281,25 +291,33 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
-    <script src="./carousel/main.js"></script>
-    
+    <script src="./carousel/main.js">
+    </script>
+
+    <script>
+        window.onload = function () {
+            loadApp();
+        };
+    </script>
+
 
     <script>
         $(window).scroll(function () {
             $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
         });
     </script>
-     <script>
-        function showmore(){
+    <script>
+        function showmore() {
             document.getElementById("CAReferral").style.display = 'block';
-            
+
         }
-        function showless(){
+        function showless() {
             document.getElementById("CAReferral").style.display = 'none';
         }
     </script>
 
     <script>
+
         function register() {
             let show = document.getElementById('ev-register');
             console.log(show);
