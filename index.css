@@ -911,6 +911,11 @@ footer {
     
     margin-top: 50px;margin-bottom: 50px;    
 }
+
+#inputAddress:active{
+    color: white;
+}
+
 /* this is replaced now by dhruvesh
 .speaker-info{
     display: flex;
