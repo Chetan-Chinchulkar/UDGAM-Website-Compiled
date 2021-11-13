@@ -16,11 +16,26 @@
     .page__date{
         font-size: 20px !important;
     }
+    .but-arrow-left{
+        position: relative;
+        top: 72px;
+        z-index: 1;
+    }
+    .but-arrow-right{
+        position: relative;
+        top: -72px;
+    }
+
     .arrow{
         
         align-items: center !important;
     }
-
+    .arrow-left{
+        transform: rotate(90deg);
+    }
+    .arrow-right{
+        transform: rotate(90deg);
+    }
     .reg-pay{
         width: 100% !important;
     }
