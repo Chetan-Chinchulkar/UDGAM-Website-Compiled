@@ -270,9 +270,11 @@ footer .mobile-footer-icons{
     display: flex;
     justify-content: space-between;
 }
-
+.footer-icons{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .footer-icons a{
-    display: inline-block;
     margin-left: 10px;
 }
 .footer-icons a img{
@@ -473,14 +475,17 @@ footer .mobile-footer-icons{
         font-size: 8px;
         font-weight: 700;
     }
+    footer .footer-text{
+        flex: 2;
+    }
     footer .footer-icons{
-        /* display: none; */
+        flex: 2;
     }
     footer .mobile-footer-icons{
         /* display: inline-block; */
     }
     .footer-icons a img{
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
     }
 }

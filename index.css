@@ -883,32 +883,103 @@ sup {
 }
 
 /* ############################################ footer css ########################################################## */
-
 .contactus {
     backdrop-filter: blur(4px);
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    justify-content: space-between;
+    font-size: 18px;
+    /* border: 2px dashed blue; */
 }
+.contactus-left{
+    /* border: 2px solid red; */
+}
+.contactus-left span:first-of-type{
+    font-size: 36px;
+    font-weight: 700;
+}
+.contactus-left span:nth-of-type(2){
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.contactus-left span{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contactus-right{
+    text-align: right; 
+    display: flex; 
+    flex-direction:column; 
+    align-content: flex-end;
+    /* border: 2px solid yellowgreen; */
+    padding: 10px 0;
+}
+
+.contactus-right span:first-of-type{
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.contactus-right span:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contactus-right form input[type=email]{
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: 700; 
+    padding: 0 10%; 
+    margin-right: 2%;
+}
+.contactus-right form input[type=submit]{
+    color: black; 
+    background-color: white; 
+    border: 0px; 
+    padding: 3px 10px;
+}
+
+
+
 
 footer {
     backdrop-filter: blur(6px);
     box-sizing: border-box;
     padding: 20px 0;
 }
+footer{
+    font-size: 18px;
+    font-weight: 700;
+}
+footer .mobile-footer-icons{
+    display: none;;
+}
 
-.footer-wrapper {
+.footer-wrapper{
     display: flex;
     justify-content: space-between;
 }
-
-.footer-icons a {
-    display: inline-block;
+.footer-icons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-icons a{
     margin-left: 10px;
+}
+.footer-icons a img{
+    width: 32px;
+    height: 32px;
 }
 
 
 .speaker {
-    
     margin-top: 50px;margin-bottom: 50px;    
 }
 
@@ -996,3 +1067,101 @@ footer {
     opacity: 0;
 }
 */
+
+
+
+
+/* ########################################### mobile view ################################################### */
+@media (min-width: 100px) and (max-width: 600px){
+
+    nav{
+        display: none;
+    }
+
+
+
+
+     /* footer  */
+     .contactus {
+        backdrop-filter: blur(4px);
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        justify-content: space-between;
+        /* border: 2px dashed blue; */
+        font-size: 12px;
+    }
+    .contactus-left{
+        /* border: 2px solid red; */
+    }
+    .contactus-left span:first-of-type{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .contactus-left span:nth-of-type(2){
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    .contactus-left span{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .contactus-right{
+        text-align: right; 
+        display: flex; 
+        flex-direction:column; 
+        align-content: flex-end;
+        /* border: 2px solid yellowgreen; */
+        padding: 0;
+    }
+    
+    .contactus-right span:first-of-type{
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 0px;
+    }
+    .contactus-right span:nth-of-type(2){
+        font-size: 9px;
+        font-weight: 400;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .contactus-right form input[type=email]{
+        background-color: transparent;
+        border: 2px solid white;
+        font-weight: 700; 
+        padding: 0 10%px; 
+        margin-right: 0;
+    }
+    .contactus-right form input[type=submit]{
+        color: black; 
+        background-color: white; 
+        border: 0px; 
+        padding: 1px 3px;
+        margin-top: 5px;
+    }
+    
+
+
+    footer{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    footer .footer-text{
+        flex: 2;
+    }
+    footer .footer-icons{
+        flex: 2;
+    }
+    footer .mobile-footer-icons{
+        /* display: inline-block; */
+    }
+    .footer-icons a img{
+        width: 16px;
+        height: 16px;
+    }
+}
