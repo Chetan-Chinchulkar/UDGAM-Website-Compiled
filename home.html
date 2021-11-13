@@ -24,9 +24,14 @@
 </head>
 
 <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+        <canvas id="bg"></canvas> 
+        <canvas id="sphere"></canvas> 
+        <div id="bg_image"></div>
 
-
-    <div class="main">
+    <main class="main">
 
         <!-- Test Navbar -->
         <nav class="navbar sticky-top bg-dark" style="padding: 0;">
@@ -96,7 +101,7 @@
         <section class="section-padding" style="margin-top: 300px;">
 
             
-            <div class="container">
+            <div class="container" id="events">
 
                 
 
@@ -1735,7 +1740,9 @@
                     <div class="col-4" style="border: 2px solid white;">
                         <br>
                         <div style="text-align: center; justify-content: center;">
+
                             <img src="./static files/UDGAM logo (title).png" alt="UDGAM img">
+
                         </div>
                         <div class="row" style="font-size: 6vh; text-align: center; justify-content: center;">
                             YOU’RE <br> INVITED
@@ -1862,6 +1869,62 @@
         </div>
 
         
+        <div id="arrows_section" class="container" style=" height:400px;">
+            <div class="arrow_cont">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+            </div>
+            <div class="bottom_sphere_cont"></div>
+            <div class="arrow_cont">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+            </div>
+        </div>
+
 
         <div style="margin-top:650px">
             <span class="container-fluid"
@@ -1932,17 +1995,21 @@
                 </div>
             </footer>
         </section>
-    </div>
+    </main>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+    <!-- three.js -->
+    <script src="js/three.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
 
     <script>
         $(window).scroll(function () {
@@ -2057,6 +2124,8 @@
 
         }
     </script>
+
+    <script type="module" src="js/animation.js"></script>
 
 </body>
 
