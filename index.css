@@ -527,11 +527,11 @@ color: #f308e7;
 }
 
 .more-events-heading {
-    display: flex;
-    flex-direction: row-reverse;
+    display: block;
+    text-align: end;
 }
 
-.more-events-heading button {
+.more-events-heading a{
     padding-top: 10px;
     background-color: transparent;
     border: none;
@@ -554,7 +554,9 @@ color: #f308e7;
     position: relative;
     margin-bottom: 30px;
 }
-
+.speaker-section{
+    padding-top: 100px;
+}
 
 .sponsor-icon-modal{
     position: absolute;
@@ -710,6 +712,7 @@ color: #f308e7;
 
 .sponsor a, .more-events-heading a {
     text-decoration: none;
+    font-size: 24px;
 }
 
 .sponsor a:hover, .more-events-heading a:hover {
@@ -834,6 +837,19 @@ body.modal-open> .main,.modal-backdrop.fade.show {
     font-weight: 300px;
 }
 
+
+
+
+
+.udgam-section{
+    padding-top: 100px;
+}
+.sponsors-section{
+    padding-top: 100px;
+}
+.countdown-section{
+    margin-top:650px;
+}
 /* -------------------------------------- faq css-------------------------------- */
 
 .faquestion {
@@ -1073,7 +1089,7 @@ footer .mobile-footer-icons{
 
 
 /* ########################################### mobile view ################################################### */
-@media (min-width: 100px) and (max-width: 600px){
+@media (min-width: 100px) and (max-width: 768px){
     /* ######################### nav styling ############################ */
     nav{
         display: none !important;
@@ -1088,13 +1104,14 @@ footer .mobile-footer-icons{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+    .speaker-section{
+        padding-top: 30px;
+    }
     .speaker-info .speaker {
         position: relative;
-        margin: 20px 0;
+        margin: 25px 0 5px 0;
         width: 45%;
     }
-    
     
     .sponsor-icon-modal{
         position: absolute;
@@ -1131,11 +1148,13 @@ footer .mobile-footer-icons{
         right: 0.5em;
         height: 1.2em;
         width: 1.2em;
-        border: 2px solid #ff5353;
-        background-color: #ffffff;
         box-sizing: border-box;
-        padding: 1px 4px;
-        transition: all 0.25s ease;
+    }
+
+    .speaker .speaker-icon .fas{
+        position: absolute;
+        top: 0.22em;
+        right: 0.30em;
     }
     
     .speaker-icon i {
@@ -1201,6 +1220,19 @@ footer .mobile-footer-icons{
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    .more-events-heading a{
+        font-size: 10px;
+    }
+    .more-events-heading a i{
+        display: none;
+    }
+    .more-events-heading a{
+        font-size: 10px;
+        padding-top: 0px;
+        background-color: transparent;
+        border: none;
     }
 
 
@@ -1276,7 +1308,18 @@ footer .mobile-footer-icons{
         padding: 1px 3px;
         margin-top: 5px;
     }
-    
+    .space{
+        margin-top: 30px;
+    }
+    .udgam-section{
+        padding-top: 50px;
+    }
+    .sponsors-section{
+        padding-top: 0px;
+    }
+    .countdown-section{
+        margin-top: 100px;
+    }
 
 
     footer{
