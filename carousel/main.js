@@ -137,7 +137,7 @@ function loadApp() {
         regImg.innerHTML += pageImage;
 
     });
-    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
+    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 100%;">REGISTER & PAY</button></a>`;
     paragraphElement.innerHTML = events_home[activePage].paragraph;
 
     pageTeam.innerHTML = events_home[activePage].team;
@@ -297,7 +297,7 @@ function changeSlider(next) {
         
         `;
 
-    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary reg-pay" style="width: 100%;">REGISTER & PAY</button></a>`;
+    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary reg-pay" style="width: 100% !important;">REGISTER & PAY</button></a>`;
 
     let eventTitle = `<div> ${events_home[id].name} </div>`;
 

@@ -36,11 +36,33 @@
     .arrow-right{
         transform: rotate(90deg);
     }
-    .reg-pay{
+    .reg-pay , .reg-link{
         width: 100% !important;
     }
+
+    .extra{
+        margin-top: 30px;
+    }
+
+    .pg-content-reg{
+        padding-top: 10px !important; 
+        
+    }
+    .page-header,.header{
+        padding-top: 0px !important;
+    }
+}
+.reg-pay , .reg-link{
+    width: 100% !important;
 }
 
+.page-header,.header{
+    padding-top: 120px;
+}
+.pg-content-reg{
+    padding-top: 160px; 
+
+}
 
 .arrow-left{
     display: flex;justify-content: start;
