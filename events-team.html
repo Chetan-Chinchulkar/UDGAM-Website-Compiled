@@ -33,7 +33,7 @@
 
         <div class="row  justify-content-between" style="display: flex; align-items: center;">
             <div class="col-3" style="display: flex;justify-content: start;">
-                <button onclick=sliderPrev()><i class="fas fa-arrow-left" > </i></button>
+                <button onclick="sliderPrev('reg')"><i class="fas fa-arrow-left" > </i></button>
             </div>
             <div class="col-2" style="display: flex;justify-content: center;">
                 <span id="prev" class="event-link"></span>
@@ -48,7 +48,7 @@
 
             </div>
             <div class="col-3" style="display: flex;justify-content: end;">
-                <button onclick=sliderNext()><i class="fas fa-arrow-right"  ></i></button>
+                <button onclick="sliderNext('reg')"><i class="fas fa-arrow-right"  ></i></button>
 
             </div>
             
@@ -60,12 +60,12 @@
             
             <section class="section-padding" style="padding-top: 120px; padding-bottom: 500px;">
                 
-                    <div class="title">
-                        Register for
-                    </div >
-                    <div class="title" id="reg-title" style="padding-left: 10px;">
+                <span class="title">
+                    Register for
+                </span >
+                <span class="title" id="reg-title" style="padding-left: 10px;">
                         
-                    </div>
+                </span>
                     
                     <!--
                         to be hidden (to make work main.js)
@@ -93,7 +93,7 @@
                                 <br>
                             </form>
                             <div class="col-sm-5 ProfilePic page__img" id="page-img" >
-                                <img  id="ProfilePic" height="200" width="400" src ="Static Files\img_avatar.png">
+                                <!-- <img  id="ProfilePic" height="200" width="400" src =""> -->
                             </div>
                         </div>
                     </div>
@@ -298,6 +298,12 @@
             crossorigin="anonymous"></script>
 
         <script src="./carousel/main.js"></script>
+
+        <script>
+            window.onload = function () {
+                load_event_page();
+            };
+        </script>
 
         <script>
             $(window).scroll(function () {

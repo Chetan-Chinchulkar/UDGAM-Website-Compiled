@@ -17,7 +17,9 @@ const prevElement = document.getElementById('prev');
 const currentElement = document.getElementById('current');
 const nextElement = document.getElementById('next');
 
-const persons = [{
+const eventNameTeamPage = document.getElementById('event-name');
+
+const events_home = [{
     name: 'Event 1',
     date: 'DATEDATEDATE1',
     paragraph: '[Event 1]Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur? <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat inventore libero quas, perferendis aliquid fugiat maiores dolor praesentium ea suscipit explicabo ut nemo! Quis officiis odit tempora praesentium. Nulla esse accusantium voluptatem. Ad, consectetur?',
@@ -64,12 +66,40 @@ const persons = [{
 }
 ];
 
+const events_page = [
+    {
+        name: 'Event 1',
+        image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        reg_link: 'www.duckduckgo.com',
+    },
+    {
+        name: 'Event 2',
+        image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        reg_link: 'www.google.com',
+    },
+    {
+        name: 'Event 3',
+        image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        reg_link: 'www.facebook.com',
+    },
+    {
+        name: 'Event 4',
+        image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        reg_link: 'www.youtube.com',
+    },
+    {
+        name: 'Event 5',
+        image: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80',
+        reg_link: 'www.instagram.com',
+    },
+];
+
 let activePage = 0; // Default
 
-loadApp();
+// loadApp();
 
 function loadApp() {
-    persons.map(({
+    events_home.map(({
         name,
         date,
         paragraph,
@@ -107,72 +137,131 @@ function loadApp() {
         regImg.innerHTML += pageImage;
 
     });
-    let eventRegisterButton = `<a href = "${persons[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
-    paragraphElement.innerHTML = persons[activePage].paragraph;
+    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
+    paragraphElement.innerHTML = events_home[activePage].paragraph;
 
-    pageTeam.innerHTML = persons[activePage].team;
-    pageEv_date.innerHTML = persons[activePage].date;
+    pageTeam.innerHTML = events_home[activePage].team;
+    pageEv_date.innerHTML = events_home[activePage].date;
     
-    pageRegDead.innerHTML = persons[activePage].reg_dead;
+    pageRegDead.innerHTML = events_home[activePage].reg_dead;
     pageReg_link.innerHTML = eventRegisterButton;
 
-    let eventTitle = `${persons[activePage].name}`;
+    let eventTitle = `${events_home[activePage].name}`;
     pageReg_Title.innerHTML = eventTitle;
 
     prevElement.innerHTML = `${getPrevName(activePage)}`;
-    currentElement.innerHTML = `${persons[activePage].name}`;
+    currentElement.innerHTML = `${events_home[activePage].name}`;
     nextElement.innerHTML = `${getnextName(activePage)}`;
 }
 
+function load_event_page(){
+    events_home.map(({
+        name,
+        image,
+        reg_link,
+    }, index) => {  
+        let pageName =
+            `
+            <span class="page-name ${activePage !== index ? 'disabled' : ''}" style="float:none">${name}</span>
+            `;
+            document.getElementById('reg-title').innerHTML += pageName;
+        
+            // <img class="${activePage !== index ? 'disabled' : ''}" id="ProfilePic" height="200" width="400" src ="${image}">
+            let pageImage = `
+                <div class="page-image ${activePage !== index ? 'disabled' : ''}">
+                    <img src="${image}" class="img-fluid" alt="Image" height="1000">
+                </div>
+            `;
+            document.getElementById('page-img').innerHTML += pageImage;
+
+    });
+    prevElement.innerHTML = `${getPrevName(activePage)}`;
+    currentElement.innerHTML = `${events_home[activePage].name}`;
+    nextElement.innerHTML = `${getnextName(activePage)}`;
+}
 
 function getPrevName(index) {
     if (index == 0) {
-        return persons[persons.length - 1].name;
+        return events_home[events_home.length - 1].name;
     }
     else {
-        return persons[index - 1].name;
+        return events_home[index - 1].name;
     }
 }
 
 function getnextName(index) {
-    // console.log(index);
-    if (index == persons.length - 1) {
-        return persons[0].name;
+    if (index == events_home.length - 1) {
+        return events_home[0].name;
     }
     else {
-        return persons[index + 1].name;
+        return events_home[index + 1].name;
     }
 }
 
 
 
-function sliderPrev() {
+function sliderPrev(page) {
+
     if (activePage === 0) {
-        activePage = persons.length - 1;
+        activePage = events_home.length - 1;
     } else {
         activePage--;
     }
     console.log(activePage);
     console.log('prev');
-    changeSlider(activePage);
+    if(page === 'events'){
+        changeSlider(activePage);
+    }else if(page === 'reg'){
+        changeEventSlider(activePage);
+    }        
     changeHeader();
 }
-function sliderNext() {
-    if (activePage === persons.length - 1) {
+function sliderNext(page) {
+    if (activePage === events_home.length - 1) {
         activePage = 0;
     } else {
         activePage++;
     }
     console.log(activePage);
     console.log('next');
-    changeSlider(activePage);
-    changeHeader();
+    // changeHeader();
+    if(page === 'events'){
+        changeSlider(activePage);
+    }else if(page === 'reg'){
+        changeEventSlider(activePage);
+    }        
+    changeHeader(); 
 }
 
 function changeHeader() {
     prevElement.innerHTML = `${getPrevName(activePage)}`;
-    currentElement.innerHTML = `${persons[activePage].name}`;
+    currentElement.innerHTML = `${events_home[activePage].name}`;
     nextElement.innerHTML = `${getnextName(activePage)}`;
+}
+
+function changeEventSlider(index) {
+    let id = index;
+    let pageName = document.getElementsByClassName('page-name')[id];
+    let otherNames = [...document.getElementsByClassName('page-name')];
+    let pageImage = document.getElementsByClassName('page-image')[id];
+    let otherImages = [...document.getElementsByClassName('page-image')];
+
+    otherNames = otherNames.filter((e, i) => i != next)
+    otherImages = otherImages.filter((e, i) => i != next)
+
+    otherNames.map(e => {
+        if (!e.classList.contains('disabled')) {
+            e.classList.add('disabled');
+        }
+    });
+    otherImages.map(e => {
+        if (!e.classList.contains('disabled')) {
+            e.classList.add('disabled');
+        }
+    });
+
+    pageName.classList.remove('disabled');
+    pageImage.classList.remove('disabled');
 }
 
 function changeSlider(next) {
@@ -203,21 +292,21 @@ function changeSlider(next) {
 
     let pageImage = `
             <div class="page-image">
-                <img src="${persons[id].image}" class="img-fluid" alt="Image" width="400">
+                <img src="${events_home[id].image}" class="img-fluid" alt="Image" width="400">
             </div>
         
         `;
 
-    let eventRegisterButton = `<a href = "${persons[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
+    let eventRegisterButton = `<a href = "${events_home[activePage].reg_link}"><button type="button" class="btn btn-primary" style="width: 21.75vw;">REGISTER & PAY</button></a>`;
 
-    let eventTitle = `<div> ${persons[id].name} </div>`;
+    let eventTitle = `<div> ${events_home[id].name} </div>`;
 
-    paragraphElement.textContent = persons[id].paragraph;
+    paragraphElement.textContent = events_home[id].paragraph;
     pageImg.innerHTML = pageImage;
     regImg.innerHTML = pageImage;
-    pageRegDead.innerText = persons[id].reg_dead;
-    pageTeam.innerText = persons[id].team;
-    pageEv_date.innerText = persons[id].date;
+    pageRegDead.innerText = events_home[id].reg_dead;
+    pageTeam.innerText = events_home[id].team;
+    pageEv_date.innerText = events_home[id].date;
     pageReg_link.innerHTML = eventRegisterButton;
 
     pageReg_Title.innerHTML = eventTitle;
