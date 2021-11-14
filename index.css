@@ -1878,7 +1878,7 @@ footer .mobile-footer-icons {
   .arrow_cont {
     box-sizing: border-box;
     /* display: inline-block; */
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;
     float: left;
     width: 30%;
@@ -1896,5 +1896,9 @@ footer .mobile-footer-icons {
     width: 100%;
     padding: 20%;
     height: 80px;
+  }
+
+  #text_2022 {
+    text-align: right !important;
   }
 }
