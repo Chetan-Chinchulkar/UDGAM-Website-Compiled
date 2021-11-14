@@ -138,6 +138,10 @@ body {
     *{
         font-size: 12px;
     }
+    .teams{
+        font-size: 12px !important;
+        height: 5vh !important;
+    }
 }
 
 
@@ -168,12 +172,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 14vh;
-    font-size: 4.8vh;
-    font-weight: 900;
+    
     margin-bottom: 6vh;
     letter-spacing: 1px;
     margin-top: 6vh;
     cursor: pointer;
+
+    font-family: Texta;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 101px;
+    /* identical to box height */
+
+
+    /* #F4FDFF */
+
+    color: #F4FDFF;
+
 }
 
 .teamshidden{
