@@ -9,13 +9,37 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+*{
+  
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
 @media only screen and (max-width: 768px){
-    *{
-        /* font-size: 3vw; */
+    
+
+    .countdown-section,.countdown-timer{
+        font-size: 10px !important;
     }
+    
+    .FAQsubtext p{
+        font-size: 10px !important;
+    }
+    .section-title{
+        font-size: 30px !important;
+    }
+    .faquestion{
+        font-size: 15px !important;
+    }
+    .faqanswer{
+        font-size: 10px !important;
+    }
+}
+
+.space{
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid white;
 }
 
 body {
@@ -1096,13 +1120,11 @@ main {
   z-index: 0 !important;
 }
 
-/* ########################################### Event link ####################################### */
-
 /* ########################################### Sponsors css ####################################### */
 
 .sponsor {
 
-  height: 70vh;
+  
   margin-top: 4vh;
 
 }
@@ -1111,7 +1133,7 @@ main {
 }
 .sponsor-right {
   /* border: 2px solid red; */
-  position: relative;
+  
 }
 
 
@@ -1137,12 +1159,11 @@ main {
 .codingninjas {
 
     
-    width: 10vw;
+    width: 150px;
     
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -2em;
-  top: 3em;
+    position: absolute;
+    transform: rotate(-90deg);
+    
 
 }
 
@@ -1249,6 +1270,7 @@ main {
 }
 .countdown-section{
     margin-top:650px;
+    font-size: 20px;
 }
 /* -------------------------------------- faq css-------------------------------- */
 #FAQsection{
