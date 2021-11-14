@@ -205,7 +205,7 @@ main {
 /* -------------------------------------- arrows section css-------------------------------- */
 
 .mobile {
-  display: none;
+  display: none !important;
 }
 .arrow_cont {
   /* display: inline-block; */
