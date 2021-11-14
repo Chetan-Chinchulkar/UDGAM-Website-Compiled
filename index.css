@@ -1109,6 +1109,9 @@ main {
   display: none;
 }
 
+.modal-backdrop{
+  z-index: 0 !important;
+}
 
 /* ########################################### Event link ####################################### */
 
