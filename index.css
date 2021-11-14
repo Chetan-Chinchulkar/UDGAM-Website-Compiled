@@ -49,7 +49,7 @@ body {
   /* Firefox */
 }
 
-/* NIGHT SKY ANIMATION  */
+/* ------------------------- background css ------------------------- */
 @keyframes move-twink-back {
   from {
     background-position: 0 0;
@@ -162,6 +162,7 @@ body {
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
 }
+/* ------------------------- end ------------------------- */
 
 /* Sphere Animation  */
 #sphere {
