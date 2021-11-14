@@ -37,9 +37,9 @@
                     <label for="emailID">EMAIL ID</label>
                     <input type="text" id="emailID" name="emailID" value="Let Us know your Mail ID so we can contact you in the speed of light">
                     <label for="password">PASSWORD</label>
-                    <div>
-                        <input type="password" id="password" name="password" value="DUMMY TEXT" style="width:100%">
-                        <svg id="passwordicon" onclick="passwordshow()" style="margin-left:-2%; margin-top:0.5%; padding:0%; position:absolute;"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+                    <div class="">
+                        <input class="" type="password" id="password" name="password" placeholder="DUMMY TEXT" style="width:100% ">
+                        <svg id="passwordicon" onclick="passwordshow()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash">
                             <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
                             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
                         </svg>
@@ -54,61 +54,54 @@
     </section> 
 
     <br><br><br><br><br>
-    <section class="footer" style="backdrop-filter: blur(6px);">
+    <section>
         <hr color="white">
 
-        <div class="contactus" style="margin-bottom: 80px; margin-top: 50px;">
-            <div id="footer_main" class="container row" style='width: 100%; margin-left: 0px; padding-left: 0px;padding-right: 0px;'>
-                <div
-                    style="display: flex; justify-content: space-between; width: 100%; padding-bottom:5%; padding-top:3%; padding-right: 0%; padding-left: 0%;">
-                    <div class="" style="font-style: Texta;">
-                        <span style="font-size:200%">UDGAM 2022 </span><br>
-                        <span>COSMOS OF ENDEAVOURS </span><br><br>
-                        <span>FAQ • Contact us</span><br>
-                        <span>udgam@iitg.ac.in </span><br>
-                    </div>
+        <div class="contactus container">
+            <div class="contactus-left">
+                <span>UDGAM 2022 </span><br>
+                <span>COSMOS OF ENDEAVOURS </span><br>
+                <span>FAQ • Contact us</span><br>
+                <span>udgam@iitg.ac.in </span><br>
+            </div>
 
-                    <div style=" text-align: right; display: flex; flex-direction:column; align-content: flex-end;">
-                        <span>Don’t miss the magic</span>
-                        <span>Sign up to receive event updates and notifications.</span><br>
-                        <form action="/action_page.php">
-                            <input type="id" id="emailid" name="fname"
-                                style="background-color: transparent; border: 2px solid white; padding-right: 10%; margin-right: 2%;">
-                            <input type="submit" value="Submit"
-                                style="color: black; background-color: white; border: 0px; margin-top:1vw; padding-top:0.8%; padding-bottom: 0.8%; padding-left: 5%; padding-right: 5%;">
-                        </form>
-                    </div>
-                </div>
+            <div class="contactus-right">
+                <span>Don’t miss the magic</span>
+                <span>Sign up to receive event updates and notifications.</span>
+                <!-- <div class="row"> -->
+                    <form action="/action_page.php">
+                        <input type="email" id="emailid" name="fname">
+                        <input type="submit" value="Submit">
+                    </form>
+                <!-- </div> -->
             </div>
         </div>
 
         <hr style="background-color: white; margin: 0;">
         <footer>
-            <div class="container footer-wrapper" style="padding: 0px;">
-                <div id="footer_content">
+            <div class="container footer-wrapper">
+                <div class="footer-text">
                     Copyright &copy; 2022 UDGAM Creatives, All rights reserved.
                 </div>
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/ecell.iitg/" target="_blank">
-                        <img class="facebook button" src="static files\facebook.svg"
-                            style="width: 32px; height:32px;">
+                        <img class="facebook button" src="static files\facebook.svg">
                     </a>
                     <a href="https://twitter.com/ecelliitg" target="_blank">
-                        <img class="twitter button" src="static files\twitter.svg"
-                            style="width: 32px; height:32px;">
+                        <img class="twitter button" src="static files\twitter.svg">
                     </a>
                     <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank">
-                        <img class="linkedin button" src="static files\linkedin.svg"
-                            style="width: 32px; height:32px;">
+                        <img class="linkedin button" src="static files\linkedin.svg">
                     </a>
                     <a href="https://www.instagram.com/ecell_iitg/" target="_blank">
-                        <img class="discord button" src="static files\instagram.svg"
-                            style="width: 32px; height:32px;">
+                        <img class="discord button" src="static files\instagram.svg">
                     </a>
                     <a href="https://www.youtube.com/user/iitgedc" target="_blank">
-                        <img class="discord button" src="static files\youtube.svg"
-                            style="width: 32px; height:32px;">
+                        <img class="discord button" src="static files\youtube.svg">
                     </a>
+                </div>
+                <div class="mobile-footer-icons">
+                    Socials
                 </div>
             </div>
         </footer>
