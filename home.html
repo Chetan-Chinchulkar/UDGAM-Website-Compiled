@@ -70,17 +70,17 @@
     <div class="twinkling"></div>
     <div class="clouds"></div>
         <canvas id="bg"></canvas> 
-        <button class="" onclick="testing()">
-            <canvas id="sphere">
+        
+            <canvas id="sphere" onclick="testing()">
                 
             </canvas> 
-        </button>
+        
         <div id="bg_image"></div>
 
     <main class="main">
 
         <!-- Test Navbar -->
-        <nav class="navbar sticky-top bg-dark" style="padding: 0;">
+        <nav class="navbar sticky-top bg-dark" id="navbar-collapse" style="padding: 0;">
             <div class="container nav-wrap">
                 <div class="leftnav">
                     <a href="./home.html"> HOME </a>
@@ -101,6 +101,12 @@
             </div>
 
         </nav>
+
+        <div class="mobile-only" style="display: none;"  id="mobile-hamburger">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </div>
 
         <!-- Title Section -->
         <section class="section-padding title-section">
@@ -2596,7 +2602,14 @@
 
     <script>
         function testing() {
-            alert('hello');
+            
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                const mobile_hamburger = document.getElementById('mobile-hamburger');
+                
+                mobile_hamburger.style = 'display:block;background-color:red;';
+            }
+            
+
         }
     </script>
 
