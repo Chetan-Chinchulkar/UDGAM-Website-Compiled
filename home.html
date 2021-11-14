@@ -23,6 +23,48 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<style>
+
+    #speaker-bg{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:10%;
+      display:inline-block;
+      padding-top:10%;
+      position:absolute;
+      overflow:hidden !important;
+      border-radius:10%;
+      -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);
+    }
+    #speaker-bg img{
+        position:absolute;
+        min-width:calc(100% + 30px);
+        height:calc(100% + 30px);
+        left:-15px;
+        right:-15px;
+        top:-15px;
+        bottom:-15px;
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        transform: translateZ(0.1px)
+      }
+      
+    #speaker-company{
+        font-size: 2vh;transform: translate(-50%,-50%);
+        width:10%;
+        display:inline-block;
+        padding-top:10%;
+        position:absolute;
+        overflow:hidden !important;
+        border-radius:10%;
+        -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+    
+    }
+
+    
+</style>
+ 
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
@@ -475,225 +517,226 @@
 
             <div style="height: 35vh; " id="events-collapse"></div>
 
-            <div class="container " >
-                <h2 style="color:#00b0e0;">
-                    MORE EVENTS
-                </h2>
-                <br>
+                <div class="container " >
+                    <h2 style="color:#00b0e0;">
+                        MORE EVENTS
+                    </h2>
+                    <br>
 
-                <div class="row justify-content-between">
+                    <div class="row justify-content-between">
 
-                    <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12">
 
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
+                                    tempore doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
-                                tempore doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
-                                </div>
-                            </div>
                         </div>
 
+
+                        <div class="col-lg-6 col-xs-12">
+
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
+                                    tempore doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
+                    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+                    <div class="row justify-content-between more-events">
+                        <div class="col-lg-6 col-xs-12">
 
-                    <div class="col-lg-6 col-xs-12">
-
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
-                            </div>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
-                                tempore doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
                                 </div>
 
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
+                                    tempore doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
 
+
+                        <div class="col-lg-6 col-xs-12">
+
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
+                                    tempore doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+                    <div class="row justify-content-between more-events">
+
+                        <div class="col-lg-6 col-xs-12">
+
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto
+                                    ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore
+                                    doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-6 col-xs-12">
+
+                            <div
+                                style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
+                                <div>
+                                    <h3>
+                                        Live Events
+                                    </h3>
+                                </div>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
+                                    iusto
+                                    ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore
+                                    doloremque. Quod sunt aspernatur ea?
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            <a href="#" style="color: #00b0e0;">
+
+                                                Buy Pass</button>
+                                        </a>
+                                    </div>
+                                    <div class="col-4" style="padding-left: 55px;">
+                                        <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                                href="#">Know More</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+                <div class="more-events-heading container">
+                    <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">
+                        show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>
+                    </button>
 
-                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
-                <div class="row justify-content-between more-events">
-                    <div class="col-lg-6 col-xs-12">
-
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
-                            </div>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
-                                tempore doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-6 col-xs-12">
-
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
-                            </div>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint
-                                tempore doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
-
-                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
-                <div class="row justify-content-between more-events">
-
-                    <div class="col-lg-6 col-xs-12">
-
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-right: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
-                            </div>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto
-                                ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore
-                                doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-6 col-xs-12">
-
-                        <div
-                            style="border: 2px solid white;padding-left: 15px;padding-right: 15px; padding-top: 10px; padding-bottom: 15px;margin-left: 10px;">
-                            <div>
-                                <h3>
-                                    Live Events
-                                </h3>
-                            </div>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam perspiciatis
-                                iusto
-                                ut magnam voluptates, aut esse, quod, corporis a nam odit voluptatibus sint tempore
-                                doloremque. Quod sunt aspernatur ea?
-                            </p>
-                            <div class="row justify-content-between">
-                                <div class="col-4">
-                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
-                                        <a href="#" style="color: #00b0e0;">
-
-                                            Buy Pass</button>
-                                    </a>
-                                </div>
-                                <div class="col-4" style="padding-left: 55px;">
-                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
-                                            href="#">Know More</a></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="more-events-heading container">
-                <button id="show-more-events" style="color:#00b0e0;" onclick="moreEvents()">
-                    show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>
-                </button>
-
             </div>
             <br><br>
         </section>
@@ -791,7 +834,7 @@
                         </div>
                     </div>
 
-                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter2" data-toggle="modal"
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter2"
                         data-target="#exampleModalCenter2">
                         <img src="./static files/speaker.png" alt="speaker img">
                         <div class="speaker-side-name">
@@ -1011,6 +1054,7 @@
                             <div class="speaker-company">Wikipedia </div>
                         </div>
                     </div>
+                </div
             </div>
             <div id="less-speakers" class="container speakers-row-2">
                 <div class="speaker-info">
@@ -1318,9 +1362,11 @@
                 </div>
             </div>
 
-            <div class="more-events-heading container">
-                <a href="./speakers.html" style="color: #00b0e0;"> VIEW ALL SPEAKERS <i
-                        class="fas fa-chevron-right sponsor-icon"></i> </a>
+            <div class="more-events-heading container" style="display: flex; justify-content: end;">
+                <a href="./speakers.html" style="color: #00b0e0;"> 
+                    VIEW ALL SPEAKERS 
+                    <i class="fas fa-chevron-right sponsor-icon"></i> 
+                </a>
                 <br>
             </div>
 
@@ -2169,7 +2215,7 @@
                 <div class="contactus-right">
                     <span>Don’t miss the magic</span>
                     <span>Sign up to receive event updates and notifications.</span>
-                    <form action="/action_page.php">
+                    <form class="form-row" style="display: flex; justify-content: end;" action="/action_page.php">
                         <input type="email" id="emailid" name="fname">
                         <input type="submit" value="Submit">
                     </form>
@@ -2548,7 +2594,7 @@
                 if (str.includes('down')) {
                     // console.log('yes');
                     element.style.display = 'flex';
-                    toggle.innerHTML = `<a href="#events-collapse">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
+                    toggle.innerHTML = `<a href="#events-collapse" style="font-size:16px; align-items:center;">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
                 } else {
                     let target = document.getElementById('events-collapse');
                     console.log(target);
