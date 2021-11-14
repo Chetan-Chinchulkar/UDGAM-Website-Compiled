@@ -1165,9 +1165,18 @@ main {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.modal{
+  padding-left: 0% !important;
+}
+
 .modal-content {
   color: black;
   display: flex;
+}
+
+.modal-content .row{
+  margin-right:0%;
+  margin-left: 0%;
 }
 
 .modalspeaker__img {
@@ -1189,52 +1198,59 @@ main {
   padding-top: 10%;
 }
 
-@media only screen and (max-width: 768px) {
-  .modal-social {
-    flex-direction: row;
-    padding-left: 0%;
-    padding-top: 3%;
-    /* padding-right:10%; */
-    /* justify-items: center; */
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-  }
+@media only screen and (max-width: 767px) {
+    .modal-social{
+        flex-direction: row; 
+        /* padding-left: 0%;  */
+        padding-top:3%;
+        padding-right: 0%;
+        /* padding-right:10%; */
+        /* justify-items: center; */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .modalicons {
-    margin-top: 0%;
-    margin-right: 5%;
-    padding-bottom: 10%;
-  }
+    .modalspeakername{
+      font-size: 30px !important;
+    }
 
-  .modalspeaker__img {
-    padding-left: 5%;
-    padding-top: 10%;
-    padding-right: 5%;
-    padding-bottom: 0%;
-    width: 50% !important;
-  }
+    .modalspeakerpostion{
+      font-size: 16px !important;
+    }
 
-  .modal-content .row {
-    margin-right: 0%;
-    margin-left: 0%;
-  }
 
-  .modal-content img {
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .modalicons {
+        margin-top: 0%;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-bottom: 3%;
+    }
+
+    .modalspeaker__img {
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-bottom: 0%;
+        width: 80% !important; 
+    }
+
+    .modal-content img{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .modalspeakername {
   color: black;
-  font-size: 250%;
+  font-size: 350%;
 }
 
 .modalspeakerpostion {
   color: black;
-  /* font-size: 50%; */
+  font-size: 150%;
   /* font-weight: 300px; */
   padding-bottom: 4%;
   margin-top: 0px;
@@ -1243,12 +1259,24 @@ main {
 
 .modalspeakerdetails {
   color: black;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 300px;
 }
 
-.udgam-section h1 {
-  padding-bottom: 100px;
+@media only screen and (max-width: 767px) {
+  .modalspeakerdetails {
+    font-size: 80%;
+  }  
+}
+
+.modal-dialog-centered{
+  margin-left:10vw;
+  margin-right:10vw;
+}
+
+
+.udgam-section h1{
+    padding-bottom: 100px;
 }
 .udgam-section {
   padding-top: 100px;
@@ -1308,10 +1336,10 @@ main {
   right: 11vw;
 }
 
-@media only screen and (max-width: 768px) {
-  .faqanswer {
-    font-size: 36px;
-  }
+@media only screen and (max-width: 767px){
+    .faqanswer{
+        font-size:36px;
+    }
 }
 /* -------------------------------------- timer css-------------------------------- */
 
@@ -1324,10 +1352,10 @@ main {
   padding-bottom: 8%;
 }
 
-@media only screen and (max-width: 768px) {
-  #countdown-timer {
-    font-size: 12vw;
-  }
+@media only screen and (max-width: 767px){
+    #countdown-timer {
+        font-size: 12vw;
+    }
 }
 
 sup {
