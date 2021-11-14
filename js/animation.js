@@ -5,6 +5,13 @@
 
 
 let box = document.querySelector('#sphere');
+var ismobile = 0;
+
+if(window.innerWidth < '768'){
+  box.style.width = box.offsetHeight.toString() + 'px';
+  ismobile = 1;
+}
+
 let box_width = box.offsetWidth;
 let box_height = box.offsetHeight;
 let box_ratio = box_width/box_height;
@@ -13,7 +20,11 @@ console.log(box_width, box_height);
 
 document.getElementById("bg_image").height = (document.querySelector("main").offsetHeight).toString() + "px";
 var title = document.getElementById("title").getBoundingClientRect();
+console.log(title.top, title.height, box_height, window.innerHeight);
 var initial_top = 100 * (title.top + title.height/2 - box_height /2) / window.innerHeight;
+box.style.top = initial_top.toString() + '%';
+
+console.log(initial_top, box.getBoundingClientRect().top);
 
 var pointerX = 0;
 var pointerY = 0;
@@ -81,16 +92,22 @@ moonLoader.load('grad_ball.gltf', (gltf) =>{
 
 const moonTexture = new THREE.TextureLoader().load('static files/sphere_map.png');
 
-const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(120, 64, 64),
-  new THREE.MeshStandardMaterial({
-    map: moonTexture,
-  })
-
-
-
-
-);
+var moon;
+if(ismobile == 0){
+  moon = new THREE.Mesh(
+    new THREE.SphereGeometry(120, 64, 64),
+    new THREE.MeshStandardMaterial({
+      map: moonTexture,
+    })
+  );
+}else{
+  moon = new THREE.Mesh(
+    new THREE.SphereGeometry(60, 64, 64),
+    new THREE.MeshStandardMaterial({
+      map: moonTexture,
+    })
+  );
+}
 /* const geometry = new THREE.SphereGeometry(120, 16, 16);
 const material = new THREE.MeshStandardMaterial({ color: 0xffffff , wireframe: true});
 const moon = new THREE.Mesh(geometry, material); */
@@ -119,15 +136,28 @@ var max_y = 100* (
     document.querySelector('#events').getBoundingClientRect().top -
     document.querySelector("body").getBoundingClientRect().top
     )/window.innerHeight;
+if(max_y == 0){
+  var max_y = 100* (
+    document.querySelector('#speakers').getBoundingClientRect().top -
+    document.querySelector("body").getBoundingClientRect().top
+    )/window.innerHeight;
+}
+console.log('max_y' ,max_y, document.querySelector('#events').getBoundingClientRect().top);
 //var max_y = 100;
 //var new_box_height = 66.4;
-var new_box_height = document.querySelector('.navbar').getBoundingClientRect().height;
+if(ismobile){
+  var new_box_height = 100;
+}else{
+  var new_box_height = document.querySelector('.navbar').getBoundingClientRect().height;
+}
+console.log(new_box_height, 'new_box_height');
 var sphere_zindex = 1;
 var sphere_positioned_at_bottom = false;
 var sphere_positioned_at_top = false;
 function scrollAnimation() {
   //var t = document.body.getBoundingClientRect().top;
   var y = (window.scrollY/window.innerHeight)*100;
+  console.log(y);
   //console.log('y',y);
   if(y>60){
       if(sphere_positioned_at_top == false){
