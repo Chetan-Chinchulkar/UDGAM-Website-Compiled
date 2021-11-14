@@ -98,9 +98,6 @@ body {
     margin-left: auto;
     margin-right: auto; */
 }
-.content {
-    /* display: flex; */
-}
 
 .RegistrationDetails{
     /* margin-left: 10vw; */
@@ -159,7 +156,7 @@ button{
 }
 
 .contactus {
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     align-items: center;
     margin-left: 10vw;
@@ -186,7 +183,7 @@ footer {
 }
 
 .contactus {
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     display: flex;
     align-items: center;
     margin-bottom: 80px;
@@ -194,9 +191,6 @@ footer {
     justify-content: space-between;
     font-size: 18px;
     /* border: 2px dashed blue; */
-}
-.contactus-left{
-    /* border: 2px solid red; */
 }
 .contactus-left span:first-of-type{
     font-size: 36px;
@@ -238,7 +232,7 @@ footer {
     background-color: transparent;
     border: 2px solid white;
     font-weight: 700; 
-    padding: 0 10%; 
+    width: 70%;
     margin-right: 2%;
 }
 .contactus-right form input[type=submit]{
@@ -252,7 +246,7 @@ footer {
 
 
 footer {
-    backdrop-filter: blur(6px);
+    /* backdrop-filter: blur(6px); */
     box-sizing: border-box;
     padding: 20px 0;
 }
@@ -282,7 +276,7 @@ footer .mobile-footer-icons{
 
 @media (min-width: 100px) and (max-width: 768px){
     .contactus {
-        backdrop-filter: blur(4px);
+        /* backdrop-filter: blur(4px); */
         display: flex;
         align-items: center;
         margin-bottom: 50px;
@@ -290,9 +284,6 @@ footer .mobile-footer-icons{
         justify-content: space-between;
         /* border: 2px dashed blue; */
         font-size: 12px;
-    }
-    .contactus-left{
-        /* border: 2px solid red; */
     }
     .contactus-left span:first-of-type{
         font-size: 12px;
@@ -353,9 +344,6 @@ footer .mobile-footer-icons{
     footer .footer-icons{
         flex: 2;
     }
-    footer .mobile-footer-icons{
-        /* display: inline-block; */
-    }
     .footer-icons a img{
         width: 16px;
         height: 16px;
@@ -363,7 +351,7 @@ footer .mobile-footer-icons{
 }
 
 @media (min-width: 100px) and (max-width: 576px){
-    .contactus, footer{
+    .contactus{
         padding-right: 10vw !important;
         padding-left: 10vw !important;
     }
