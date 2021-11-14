@@ -1,3 +1,81 @@
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    .reg-bor{
+        border-bottom: solid 1px white;
+        border-right: 0 !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .reg-butt{
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .title{
+        font-size: 30px !important;
+    }
+    .page__date{
+        font-size: 20px !important;
+    }
+    .but-arrow-left{
+        position: relative;
+        top: 72px;
+        z-index: 1;
+    }
+    .but-arrow-right{
+        position: relative;
+        top: -72px;
+    }
+
+    .arrow{
+        
+        align-items: center !important;
+    }
+    .arrow-left{
+        transform: rotate(90deg);
+    }
+    .arrow-right{
+        transform: rotate(90deg);
+    }
+    .reg-pay , .reg-link{
+        width: 100% !important;
+    }
+
+    .extra{
+        margin-top: 30px;
+    }
+
+    .pg-content-reg{
+        padding-top: 10px !important; 
+        
+    }
+    .page-header,.header{
+        padding-top: 0px !important;
+    }
+    
+}
+.reg-pay , .reg-link{
+    width: 100% !important;
+}
+
+.page-header,.header{
+    padding-top: 120px;
+}
+.pg-content-reg{
+    padding-top: 160px; 
+
+}
+
+.arrow-left{
+    display: flex;justify-content: start;
+}
+.arrow-right{
+    display: flex;justify-content: end;
+}
+
+.reg-bor{
+    border-right: solid 1px white;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;

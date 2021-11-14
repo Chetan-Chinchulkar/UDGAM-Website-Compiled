@@ -35,23 +35,23 @@
         <br>
 
         <div class="row  justify-content-between" style="display: flex; align-items: center;">
-            <div class="col-3" style="display: flex;justify-content: start;">
-                <button onclick="sliderPrev('events')"><i class="fas fa-arrow-left"> </i></button>
+            <div class="col-12 col-sm-12 col-md-3 " style="display: flex;justify-content: start;">
+                <button class="but-arrow-left" onclick="sliderPrev('events')"><i class="fas fa-arrow-left arrow arrow-left "> </i></button>
             </div>
-            <div class="col-2" style="display: flex;justify-content: center;">
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
                 <span id="prev" class="event-link"></span>
 
             </div>
-            <div class="col-2" style="display: flex;justify-content: center;">
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
                 <span id="current" class="event-link"></span>
 
             </div>
-            <div class="col-2" style="display: flex;justify-content: center;">
+            <div class="col-12 col-sm-12 col-md-2 ev-trans" style="display: flex;justify-content: center;">
                 <span id="next" class="event-link"></span>
 
             </div>
-            <div class="col-3" style="display: flex;justify-content: end;">
-                <button onclick="sliderPrev('events')"><i class="fas fa-arrow-right"></i></button>
+            <div class="col-12 col-sm-12 col-md-3" style="display: flex;justify-content: end;">
+                <button class="but-arrow-right" onclick="sliderNext('events')"><i class="fas fa-arrow-right  arrow arrow-right "></i></button>
 
             </div>
 
@@ -63,7 +63,7 @@
 
 
             <div class="page" id="pg-content-reg">
-                <div class="page-header title" id="page-header" style="padding-top: 120px;">
+                <div class="page-header title" id="page-header" >
 
                 </div>
                 <br>
@@ -71,14 +71,14 @@
                 <br>
                 <br>
                 <br>
-                <div class="pg-content-reg" style="padding-top: 161px; padding-bottom: 500px;">
+                <div class="pg-content-reg">
 
                     <div class="page-body" id="page-body">
-                        <div class="page_content row justify-content-between">
-                            <p class="page_paragraph col-6" id='paragraph'>
+                        <div class="page_content row justify-content-between ">
+                            <p class="page_paragraph col-12 col-sm-12 col-md-6 order-2 order-lg-1 order-md-1 extra" id='paragraph'>
 
                             </p>
-                            <div class="col-4 align-self-center page__img" id="page-img"
+                            <div class="col-12 col-sm-12 col-md-4 align-self-center page__img order-1 order-lg-2 order-md-2" id="page-img"
                                 style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
 
                             </div>
@@ -89,7 +89,7 @@
                         style="padding: 10px 10px; margin-top: 125px; margin-bottom: 250px;">
                         <div class="row justify-content-between"
                             style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4;">
-                            <div class="col-3 align-self-start" style="border-right: solid 1px white;">
+                            <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
                                 <div class="head">
                                     REG. DEADLINE
                                 </div>
@@ -97,7 +97,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-2 align-self-start" style="border-right: solid 1px white;">
+                            <div class="col-12 col-sm-12 col-md-2 align-self-start reg-bor">
                                 <div class="head">
                                     TEAM SIZE
                                 </div>
@@ -105,7 +105,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-3 align-self-start" style="border-right: solid 1px white;">
+                            <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
                                 <div class="head">
                                     DATE
                                 </div>
@@ -113,8 +113,8 @@
 
                                 </div>
                             </div>
-                            <div class="col-3 align-self-center">
-                                <div class="row justify-content-center">
+                            <div class="col-12 col-sm-12 col-md-3 align-self-center">
+                                <div class="row justify-content-center  reg-butt">
                                     <a href="#ev-register">
                                         <button onclick="register()" type="button" class="btn btn-primary"
                                             style="background-color: #00B0E0;width: 200px;font-style: normal;font-size: 30px;line-height: 40px;color: #FFFFFF;flex: none;order: 0;flex-grow: 0;margin: 0px 9.06433px;">
@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div class="ev-register" id="ev-register">
-                <section class="section-padding" id="ls" style="padding-top: 120px; padding-bottom: 500px;">
+                <section class="section-padding header" >
                     <div class="title" style="display: flex;justify-content: start;">
                         <div>
                             Register for
@@ -143,10 +143,10 @@
 
                     <div class="content" style="padding-top: 60px;">
                         <div class="row  justify-content-between">
-                            <div class="col-7">
+                            <div class="col-12 col-sm-12 col-md-7 order-2 order-lg-1 order-md-1">
                                 <form action="">
                                     <div class="form-row">
-                                        <div class="form-group">
+                                        <div class="form-group extra">
                                             <label for="" style="padding-left: 5px;">
                                                 YOU HEARD US FROM
                                             </label>
@@ -169,9 +169,12 @@
                                         </div>
 
                                     </div>
-                                    <div class="form-group  CA-option" id="CAReferral">
-                                        <label for="inputAddress">CA REFERRAL ID</label>
-                                        <input type="text" class="form-control" id="inputAddress" style="background: transparent;border: 2px solid white;" placeholder="6969696">
+                                    <div class="form-group  CA-option row" id="CAReferral">
+                                        <div class="col-12 col-sm-12 col-md-12 ">
+
+                                            <label for="inputAddress">CA REFERRAL ID</label>
+                                            <input type="text" class="form-control" id="inputAddress" style="background: transparent;border: 2px solid white;" placeholder="6969696">
+                                        </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group">
@@ -181,18 +184,19 @@
                                         </div>
                                     </div>
                                     <div class=" row justify-content-between">
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
+                                            
                                             <div id="reg-link">
 
                                             </div>
 
 
                                         </div>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-12 col-sm-12 col-md-6">
                                             <a href="#">
                                                 <button onclick="reg_back()" type="button"
                                                     class="btn btn-light back-btn"
-                                                    style="color: white;width: 21.75vw;">GO BACK</button>
+                                                    style="color: white;width: 100%;">GO BACK</button>
                                             </a>
                                         </div>
                                     </div>
@@ -200,7 +204,7 @@
 
                             </div>
 
-                            <div class="col-4 align-self-center page__img" id="reg-img"
+                            <div class="col-12 col-sm-12 col-md-4 align-self-center page__img order-1 order-lg-2 order-md-2" id="reg-img"
                                 style="border: solid 1px #C4C4C4; width: 30vw !important; height: 50vh !important;">
 
                             </div>
