@@ -112,6 +112,40 @@
   animation: move-clouds-back 200s linear infinite;
 }
 /* ------------------------- end ------------------------- */
+
+/* ------------------------- mobile-view ------------------------- */
+
+@media screen and (max-width: 767px) {
+  .contact-us {
+    padding: 0 !important;
+  }
+  .contact-us .contact-us-form {
+    padding: 0 !important;
+  }
+  .label{
+    font-size: 12px !important;
+  }
+
+  *{
+    font-size: 12px !important;
+  }
+  .msg{
+    margin-top: 2.5vh; margin-bottom: 5vh;
+  }
+  .email-ext{
+    margin-top: 2.5vh; margin-bottom: 5vh;
+  }
+}
+
+
+
+/* ------------------------- end ------------------------- */
+
+
+.msg{
+  margin-top: 5vh; margin-bottom: 15vh;
+}
+
 #text{
 	color:#00B0E0;
 }
@@ -121,7 +155,7 @@
 #b{
 	
 	background-color: transparent;
-	margin:5px;
+
 	border-color: white;
 	padding: 4px;
 	border-top-width: 1px;
@@ -145,6 +179,7 @@
 #image1{
 	height:80%;
  	width:100%;
+
 }
 #image1:hover {
     content: url('static files/2nd.png');
