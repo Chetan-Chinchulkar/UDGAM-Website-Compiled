@@ -343,7 +343,7 @@ main {
 }
 
 .label-ev {
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -577,7 +577,7 @@ main {
   ~ .content.content_event1
   h1 {
   color: #d64541;
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -614,7 +614,7 @@ main {
   ~ .content.content_event2
   h1 {
   color: #f5d76e;
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -651,7 +651,7 @@ main {
   ~ .content.content_event3
   h1 {
   color: #00b16a;
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -688,7 +688,7 @@ main {
   ~ .content.content_event4
   h1 {
   color: #f27935;
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -725,7 +725,7 @@ main {
   ~ .content.content_event5
   h1 {
   color: #f308e7;
-  /*font-family: Texta;*/
+  font-family: Texta;
   font-style: normal;
   font-weight: 800;
   font-size: 60px;
@@ -1306,7 +1306,7 @@ main {
 .faqdropdown {
   font-size: 3vh;
   font-weight: 400;
-  /* font-style: Texta; */
+  font-style: Texta;
   /* border: 2px solid white; */
 }
 
