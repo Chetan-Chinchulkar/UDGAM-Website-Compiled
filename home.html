@@ -107,14 +107,14 @@
             <div class="container" id="title">
                 <div class="row justify-content-around">
 
-                    <div class="col col-lg-6 align-self-start">
+                    <div class="col col-lg-6 align-self-start center-title">
                         UDGAM
                     </div>
-                    <div class="col-lg-5 col-xs-1"></div>
+                    <div class="col-lg-5 hidden-xs"></div>
                 </div>
                 <div class="row justify-content-around">
-                    <div class="col-lg-6 col-xs-1"></div>
-                    <div class="col col-lg-6" style="padding-left: 50px;">
+                    <div class="col-lg-6 hidden-xs"></div>
+                    <div class="col col-lg-6 align-self-start center-title" >
                         2022
                     </div>
 
@@ -125,10 +125,10 @@
         <section class="section-padding">
             <div class="container" id="register">
                 <div class="row">
-                    <div class="col col-5">
+                    <div class="col col-lg-4 d-none d-lg-inline">
 
                     </div>
-                    <div class="col col-3" style="margin: 7vh 0; font-size: larger;">
+                    <div class="col col-lg-4 text-center" style="margin: 7vh 0; font-size: larger; ">
                         <button style="color: #333333; padding:1vh 2vw; font-weight: bold;">
                             <a href="#" style="color: black;">
 
@@ -136,7 +136,7 @@
                             </a>
                         </button>
                     </div>
-                    <div class="col col-4">
+                    <div class="col col-lg-4 d-none d-lg-inline">
 
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                             </svg>
                         </div>
                         <div class="events-head-list-title events-position-right" id="internfair-event-text"
-                            style="position:absolute; top: -18px; left:765px; right:200px; text-align:left; z-index:2;">
+                            style="position:absolute; top: -18px; left:765px; right:47px; text-align:left; z-index:2;">
                             INTERNFAIR
                             <div class="events-head-body" style="text-align: left; display:none;" id="internfair-event-body">Once again, get
                                 ready for the biggest Intern-fair in the North-east. It is an amazing event.
@@ -193,6 +193,7 @@
                                 </a>
                                 <br>
                             </div>
+                            <br>
                         </div>
                         
                         
@@ -210,7 +211,7 @@
                             </svg>
                         </div>
                         <div class="events-head-list-title"
-                            style="position:absolute; top:115px; left:-663px; right:0px; margin-left: 65%;margin-right:68%;"
+                            style="position:absolute; top:115px; left:-663px; right:0px; margin-left: 52%;margin-right:68%; text-align: right;"
                             id="lectureseries-event-text">
                             LECTURE SERIES
                             <div class="events-head-body" style="display:none; text-align:right;" id="lectureseries-event-body">Once again, get
@@ -226,6 +227,7 @@
                                 </a>
                                 <br>
                             </div>
+                            <br>
                         </div>
                         
                         
@@ -243,7 +245,7 @@
                             </svg>
                         </div>
                         <div class="events-head-list-title events-position-right"
-                            style="position:absolute; top:165px; left:765px; right:200px; text-align:left; z-index:2;" id="pmx-event-text">
+                            style="position:absolute; top:165px; left:765px; right:47px; text-align:left; z-index:2;" id="pmx-event-text">
                             PMX
                             <div class="events-head-body" style="text-align: left; display:none;" id="pmx-event-body">Once again, get ready
                                 for the biggest Intern-fair in the North-east. It is an amazing event.
@@ -258,6 +260,7 @@
                                 <br>
                         
                             </div>
+                            <br>
                         </div>
                         
                         
@@ -275,9 +278,8 @@
                             </svg>
                         </div>
                         <div class="events-head-list-title"
-                            style="position:absolute; top:282px; left:-663px; right:0px;  margin-left: 65%;margin-right:68%;"
-                            id="workshops-event-text">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WORKSHOPS
+                            style="position:absolute; top:282px; left:-663px; right:0px; margin-left: 52%;margin-right:68%; text-align: right;"
+                            id="workshops-event-text">WORKSHOPS
                             <div class="events-head-body" style="display:none; text-align: right;" id="workshops-event-body">Once again, get
                                 ready
                                 for the biggest Intern-fair in the North-east. It is an amazing event.
@@ -289,8 +291,9 @@
                                 <a href="#" class="title-knw">
                                     Know More
                                 </a>
-                                <br>
+                                
                             </div>
+                            <br>
                         </div>
                         
                         
@@ -308,7 +311,7 @@
                             </svg>
                         </div>
                         <div class="events-head-list-title events-position-right"
-                            style="position:absolute; top:370px; left:765px; right:200px; text-align:left; " id="disrupt-event-text">
+                            style="position:absolute; top:370px; left:765px; right:47px; text-align:left; " id="disrupt-event-text">
                             DISRUPT
                             <div class="events-head-body" style="text-align: left; display:none;" id="disrupt-event-body">Once again, get
                                 ready
@@ -323,6 +326,7 @@
                                 </a>
                                 <br>
                             </div>
+                            <br>
                         </div>
                         <div style="height:550px;"></div>
                     </div>
@@ -716,7 +720,7 @@
 
         <!-- Speakers Section -->
         <section class="section-padding speaker-section">
-            <div class="container">
+            <div class="container" id="speakers">
                 <div class="col-lg-12 col-xs-12">
                     <div class="row justify-content-left">
                         <div>
@@ -2133,7 +2137,7 @@
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
             </div>
             <div class="bottom_sphere_cont"></div>
-            <div class="arrow_cont">
+            <div class="arrow_cont pc">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
@@ -2159,6 +2163,18 @@
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
             </div>
+
+<!--             <div class="arrow_cont mobile">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+            </div>
+            <div class="bottom_sphere_cont"></div>
+            <div class="arrow_cont mobile">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+            </div> -->
         </div>
 
 
