@@ -1901,4 +1901,8 @@ footer .mobile-footer-icons {
   #text_2022 {
     text-align: right !important;
   }
+
+  .mobile {
+    display: grid !important;
+  }
 }
