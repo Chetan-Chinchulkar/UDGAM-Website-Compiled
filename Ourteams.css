@@ -1,0 +1,189 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    background-image : url("Static Files/photo-1598812866501-87ad598839e7.png") ;
+    /* background-image : url('Static Files/bkgrd 1.png') ; */
+
+    background-size: 100% ;
+}
+
+*{
+    font-family: Texta;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.main{
+    margin-left: 10vw;
+    margin-top: 10vh;
+    margin-right: 10vw;
+    margin-bottom: 15vh;
+}
+
+.mainheading{
+    margin-bottom: 8vh;
+}
+
+.heading{
+    font-size : 3.5vw;
+    font-weight: 800;
+}
+
+.headingsub{
+    /* margin-top: 1vh; */
+    margin-bottom: 11vh;
+}
+
+.teams{
+    background-size: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    font-size: 4.8vh;
+    font-weight: 900;
+    margin-bottom: 6vh;
+    letter-spacing: 1px;
+    margin-top: 6vh;
+    cursor: pointer;
+}
+
+.teamshidden{
+    display: flex;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.teams span{
+    font-size: 4.8vh;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.team_description{
+    margin:35px;
+    margin-right: 0px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+    width: 50%;
+}
+
+
+
+.team_members{
+    margin-top:35px;
+    margin-bottom:35px;
+    margin-right:35px;
+    width: 50%;
+}
+
+.team_members ul{
+    list-style-type:none; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: end;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .team_description{
+        display: none;
+    }
+
+    .team_members{
+        margin-top:35px;
+        margin-bottom:35px;
+        margin-right:35px;
+        width: 100%;
+    }
+
+    .team_members ul{
+        list-style-type:none; 
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .team_members ul li{
+        list-style-type:none; 
+        display:inline-block; 
+        width: 50%;
+    }
+
+    li{
+        width: 50%;
+        padding-right: 0%;
+        margin-right:0%;
+    }
+    
+}
+.creativesdiv{
+    background-image: url('static files/Quick gradient test 2.png');
+}
+.creativesdivhidden{
+    background-image: url('static files/Quick gradient test 2 expanded (1).png');
+    /* background-image: url('static files/Quick gradient test.png'); */
+}
+.disruptdiv{
+    background-image: url('static files/Rectangle 55.png');
+}
+.growthdiv{
+    background-image: url('static files/Rectangle.png');
+}
+.interndiv{
+    background-image: url('static files/Rectangle 56.png');
+}
+.lsdiv{
+    background-image: url('static files/Rectangle 55.png');
+}
+.marketingdiv{
+    background-image: url('static files/Rectangle 55.png');
+}
+.pmxdiv{
+    background-image: url('static files/Rectangle 55.png');
+}
+.initiativesdiv{
+    background-image: url('static files/Rectangle 55.png');
+}
+
+.bottom{
+    margin-top:20vh;
+}
+
+.contactus {
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+    /* margin-top: 10vh; */
+    margin-right: 10vw;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin-left: 10vw;
+    /* margin-top: 10vh; */
+    margin-right: 10vw;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin-left: 10px;
+}
