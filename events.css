@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Texta';
+    src: url('Texta-Regular.eot');
+    src: local('Texta'), local('Texta-Regular'),
+        url('Texta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Texta-Regular.woff2') format('woff2'),
+        url('Texta-Regular.woff') format('woff'),
+        url('Texta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
     .reg-bor{
