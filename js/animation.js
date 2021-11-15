@@ -15,16 +15,16 @@ if(window.innerWidth < '768'){
 let box_width = box.offsetWidth;
 let box_height = box.offsetHeight;
 let box_ratio = box_width/box_height;
-console.log(box_width, box_height);
+//console.log(box_width, box_height);
 
 
 document.getElementById("bg_image").height = (document.querySelector("main").offsetHeight).toString() + "px";
 var title = document.getElementById("title").getBoundingClientRect();
-console.log(title.top, title.height, box_height, window.innerHeight);
+//console.log(title.top, title.height, box_height, window.innerHeight);
 var initial_top = 100 * (title.top + title.height/2 - box_height /2) / window.innerHeight;
 box.style.top = initial_top.toString() + '%';
 
-console.log(initial_top, box.getBoundingClientRect().top);
+//console.log(initial_top, box.getBoundingClientRect().top);
 
 var pointerX = 0;
 var pointerY = 0;
@@ -142,7 +142,7 @@ if(max_y == 0){
     document.querySelector("body").getBoundingClientRect().top
     )/window.innerHeight;
 }
-console.log('max_y' ,max_y, document.querySelector('#events').getBoundingClientRect().top);
+//console.log('max_y' ,max_y, document.querySelector('#events').getBoundingClientRect().top);
 //var max_y = 100;
 //var new_box_height = 66.4;
 if(ismobile){
@@ -150,14 +150,14 @@ if(ismobile){
 }else{
   var new_box_height = document.querySelector('.navbar').getBoundingClientRect().height;
 }
-console.log(new_box_height, 'new_box_height');
+//console.log(new_box_height, 'new_box_height');
 var sphere_zindex = 1;
 var sphere_positioned_at_bottom = false;
 var sphere_positioned_at_top = false;
 function scrollAnimation() {
   //var t = document.body.getBoundingClientRect().top;
   var y = (window.scrollY/window.innerHeight)*100;
-  console.log(y);
+  //console.log(y);
   //console.log('y',y);
   if(y>60){
       if(sphere_positioned_at_top == false){
@@ -197,9 +197,27 @@ function scrollAnimation() {
   if(-1 * bottom_sphere_box.getBoundingClientRect().top > -400){
       if(sphere_positioned_at_bottom == false){
         var new_top = (bottom_sphere_box.getBoundingClientRect().top).toString()+"px";
-        console.log(new_top);
+        var old_top = sphere.getBoundingClientRect().top;
+        //console.log(new_top);
+        /* const loops = 40;
+        var i = 0;                  
+        function myLoop() {         
+          setTimeout(function() {   
+            sphere.style.top = (old_top + i*(new_top - old_top)/loops).toString() + 'px';
+            console.log(sphere.getBoundingClientRect().top);
+            i++;                
+            console.log('looping',i);    
+            if (i < loops) {
+              myLoop();
+            }                       
+          }, 10)
+          
+        }
+        myLoop(); */
+
+
         $("#sphere").animate(
-            {top: new_top, width: box_width, height: box_height}
+            { top: new_top,  width: box_width, height: box_height}
             ,400,"swing");
         sphere_positioned_at_bottom = true;
         sphere_positioned_at_top = false;
