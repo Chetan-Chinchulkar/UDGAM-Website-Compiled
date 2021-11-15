@@ -21,57 +21,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./hamberger.css">
 </head>
-
-<style>
-
-    #speaker-bg{
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width:10%;
-      display:inline-block;
-      padding-top:10%;
-      position:absolute;
-      overflow:hidden !important;
-      border-radius:10%;
-      -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);
-    }
-    #speaker-bg img{
-        position:absolute;
-        min-width:calc(100% + 30px);
-        height:calc(100% + 30px);
-        left:-15px;
-        right:-15px;
-        top:-15px;
-        bottom:-15px;
-        transition: .5s ease-in-out;
-        -webkit-transition: .5s ease-in-out;
-        transform: translateZ(0.1px)
-      }
-      
-    #speaker-company{
-        font-size: 2vh;transform: translate(-50%,-50%);
-        width:10%;
-        display:inline-block;
-        padding-top:10%;
-        position:absolute;
-        overflow:hidden !important;
-        border-radius:10%;
-        -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
-    
-    }
-
-    
-</style>
- 
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
     <div class="clouds"></div>
         <canvas id="bg"></canvas> 
         
-            <canvas id="sphere" onclick="testing()">
+            <canvas id="sphere">
                 
             </canvas> 
         
@@ -86,7 +45,7 @@
                     <a href="./home.html"> HOME </a>
                     <a href="./events.html"> EVENTS </a>
                     <a href="./speakers.html"> SPEAKERS </a>
-                    <a href=""> ABOUT US </a>
+                    <a href=""> ABOUT US  </a>
                 </div>
                 <div class="midnav">
                     <!-- <a href="#"> logo </a> -->
@@ -95,32 +54,40 @@
                     <a href="./Ourteams.html"> TEAM </a>
                     <a href="./sponsors.html"> SPONSORS </a>
                     <a href="./contact us.html"> CONTACT US </a>
-                    <a href=""> SIGNUP </a>
+                    <a href="./Registeration.html"> SIGNUP </a>
                 </div>
 
             </div>
-
         </nav>
 
-        <div class="mobile-only" style="display: none;"  id="mobile-hamburger">
+
+        <div id="hamberger-overlay" class="mobile-nav container close" style="text-align: center;">
+            <div><a href="#">Link1</a></div>
+            <div><a href="#">Link2</a></div>
+            <div><a href="#">Link3</a></div>
+            <div><a href="#">Link4</a></div>
+        </div>
+
+        
+        <!-- <div class="navbar sticky-top mobile-only" style="display: none; z-index: 5;position: absolute; top: 50px;"  id="mobile-hamburger">
             <li>a</li>
             <li>b</li>
             <li>c</li>
-        </div>
+        </div> -->
 
         <!-- Title Section -->
         <section class="section-padding title-section">
             <div class="container" id="title">
                 <div class="row justify-content-around">
 
-                    <div class="col col-lg-6 align-self-start center-title">
+                    <div class="col col-lg-6 align-self-start center-title" style="text-align: left">
                         UDGAM
                     </div>
                     <div class="col-lg-5 hidden-xs"></div>
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-lg-6 hidden-xs"></div>
-                    <div class="col col-lg-6 align-self-start center-title" >
+                    <div class="col col-lg-6 align-self-start center-title" style = "text-align: center" id="text_2022">
                         2022
                     </div>
 
@@ -2106,7 +2073,7 @@
 
         
         <div id="arrows_section" class="container" >
-            <div class="arrow_cont">
+            <div class="arrow_cont pc">
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
@@ -2132,7 +2099,16 @@
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
             </div>
+            <div class="arrow_cont mobile">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+            </div>
             <div class="bottom_sphere_cont"></div>
+            <!-- <div class="bottom_sphere_cont mobile"></div> -->
             <div class="arrow_cont pc">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
@@ -2160,17 +2136,17 @@
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
             </div>
 
-<!--             <div class="arrow_cont mobile">
-                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
-                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
-                <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
-            </div>
-            <div class="bottom_sphere_cont"></div>
+            
+            
             <div class="arrow_cont mobile">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
                 <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
-            </div> -->
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                
+            </div>
         </div>
 
 
@@ -2590,18 +2566,7 @@
 
     <script type="module" src="js/animation.js"></script>
 
-    <script>
-        function testing() {
-            
-            if (window.matchMedia("(max-width: 767px)").matches) {
-                const mobile_hamburger = document.getElementById('mobile-hamburger');
-                
-                mobile_hamburger.style = 'display:block;background-color:red;';
-            }
-            
-
-        }
-    </script>
+    <script src="./hamberger.js"></script>
 
 </body>
 
