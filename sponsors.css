@@ -112,9 +112,24 @@
   animation: move-clouds-back 200s linear infinite;
 }
 /* ------------------------- end ------------------------- */
+
+@font-face {
+  font-family: "Texta";
+  src: url("Texta-Regular.eot");
+  src: local("Texta"), local("Texta-Regular"),
+    url("Texta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Texta-Regular.woff2") format("woff2"),
+    url("Texta-Regular.woff") format("woff"),
+    url("Texta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 600px) {
-    
+    nav{
+      display: none !important;
+    }
     .sponsor{
         margin-top: 20px;
     }
@@ -165,6 +180,7 @@
 
   .main-title{
     font-size: 72px;
+    font-weight: 600;
     color: #01AC86;
 
   }
@@ -221,7 +237,7 @@ body {
 }
 
 .midnav {
-    border: 2px solid white;
+    
     padding: 20px 0px;
     flex-grow: 1;
     height: 100%;
@@ -241,14 +257,14 @@ body {
 
 *{
     font-style: Texta;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
 }
 
 .title{
     
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 36px;
     line-height: 50px;
 

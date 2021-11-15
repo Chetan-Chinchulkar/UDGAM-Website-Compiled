@@ -267,6 +267,7 @@ input{
 button{
     background-color: transparent; 
     border: 1px solid white;
+    max-width: 100% !important;
 }
 
 .contactus {

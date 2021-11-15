@@ -132,6 +132,49 @@
 }
 /* ------------------------- end ------------------------- */
 
+@font-face {
+  font-family: "Texta";
+  src: url("Texta-Regular.eot");
+  src: local("Texta"), local("Texta-Regular"),
+    url("Texta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Texta-Regular.woff2") format("woff2"),
+    url("Texta-Regular.woff") format("woff"),
+    url("Texta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.con-title{
+      
+  font-family: Texta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height */
+
+
+  /* #00B0E0 */
+
+  color: #00B0E0;
+
+}
+.con-main-title{
+
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 101px;
+  /* identical to box height */
+
+
+  /* #00B0E0 */
+
+  color: #00B0E0;
+
+
+}
 /* ------------------------- mobile-view ------------------------- */
 
 @media screen and (max-width: 767px) {
@@ -144,6 +187,16 @@
   .label{
     font-size: 12px !important;
   }
+  .con-main-title{
+    font-size: 24px !important;
+  }
+  .con-title,div div .p{
+    font-size: 18px !important;
+  }
+  #textbox, #textarea{
+    
+    font-size: 12px !important;
+  }
 
   /* *{
     font-size: 12px !important;
@@ -154,6 +207,18 @@
   .email-ext{
     margin-top: 2.5vh; margin-bottom: 2.5vh;
   }
+  .extra-con{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between !important;
+  }
+    
+  .contact{
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+
 }
 
 
@@ -198,7 +263,6 @@
 	padding-right: 2vw;
 }
 #b{
-	
 	background-color: transparent;
 
 	border-color: white;
@@ -228,6 +292,11 @@ margin-bottom: 3vh;
 
 }
 
+.contact{
+  margin-top: 6vh;
+  margin-bottom: .5vh;
+}
+
 
 #textbox{
 width:100%;
@@ -242,6 +311,7 @@ border-right-width: 1px;
 background-color: transparent;
 border-color: white;
 border-radius: 0px;
+font-size: 16px;
 }
 
 .modal-backdrop{
