@@ -49,12 +49,6 @@ body::-webkit-scrollbar {
   border: 2px solid white;
 }
 
-body {
-  /* -ms-overflow-style: none; */
-  /* IE and Edge */
-  /* scrollbar-width: none; */
-  /* Firefox */
-}
 
 /* ------------------------- background css ------------------------- */
 @keyframes move-twink-back {
@@ -1124,12 +1118,6 @@ main {
 .sponsor {
   margin-top: 4vh;
 }
-.sponsor-left {
-  /* border: 2px solid yellow; */
-}
-.sponsor-right {
-  /* border: 2px solid red; */
-}
 
 .sponsor a,
 .more-events-heading a {
@@ -1761,9 +1749,7 @@ footer .mobile-footer-icons {
     /* border: 2px dashed blue; */
     font-size: 12px;
   }
-  .contactus-left {
-    /* border: 2px solid red; */
-  }
+
   .contactus-left span:first-of-type {
     font-size: 12px;
     font-weight: 700;
@@ -1840,9 +1826,7 @@ footer .mobile-footer-icons {
   footer .footer-icons {
     flex: 2;
   }
-  footer .mobile-footer-icons {
-    /* display: inline-block; */
-  }
+  
   .footer-icons a img {
     width: 16px;
     height: 16px;
