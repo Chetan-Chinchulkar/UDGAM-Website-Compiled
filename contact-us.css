@@ -65,6 +65,25 @@
   }
 }
 
+@font-face {
+  font-family: "Texta";
+  src: url("Texta-Regular.eot");
+  src: local("Texta"), local("Texta-Regular"),
+    url("Texta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Texta-Regular.woff2") format("woff2"),
+    url("Texta-Regular.woff") format("woff"),
+    url("Texta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-style: Texta;
+  font-weight: 600;
+  color: white;
+  font-size: 16px; 
+}
+
 .stars,
 .twinkling,
 .clouds {
@@ -126,9 +145,9 @@
     font-size: 12px !important;
   }
 
-  *{
+  /* *{
     font-size: 12px !important;
-  }
+  } */
   .msg{
     margin-top: 2.5vh; margin-bottom: 5vh;
   }
@@ -146,9 +165,7 @@
   margin-top: 5vh; margin-bottom: 15vh;
 }
 
-#text{
-	color:#00B0E0;
-}
+
 #t{
 	padding-right: 2vw;
 }
@@ -176,40 +193,34 @@
 	border-color: transparent;
 
 }
-#image1{
-	height:80%;
- 	width:100%;
+
+.c{
+margin-top:3vh;
+margin-bottom: 3vh;
 
 }
-#image1:hover {
-    content: url('static files/2nd.png');
+
+
+#textbox{
+width:100%;
+height:35px;
+background-color: transparent;
+border-color: white;
+border-bottom-width: 1px;
+border-right-width: 1px;
+
+}
+#textarea{
+background-color: transparent;
+border-color: white;
+border-radius: 0px;
 }
 
-#image{
-	height:80%;
- 	width:100%;
+.modal-backdrop{
+  z-index: 0 !important;
 }
-#image:hover {
-    content: url('static files/2nd.png');
+
+.footer-wrapper{
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
- .c{
- 	margin-top:3vh;
- 	margin-bottom: 3vh;
-
- }
-
-
- #textbox{
- 	width:100%;
- 	height:35px;
- 	background-color: transparent;
- 	border-color: white;
- 	border-bottom-width: 1px;
- 	border-right-width: 1px;
-
- }
- #textarea{
- 	background-color: transparent;
- 	border-color: white;
- 	border-radius: 0px;
- }
