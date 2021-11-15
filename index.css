@@ -1848,10 +1848,6 @@ footer .mobile-footer-icons {
     height: 16px;
   }
 
-  .center-title {
-    /*  text-align: center; */
-  }
-
   #title {
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -1897,6 +1893,7 @@ footer .mobile-footer-icons {
 
   #text_2022 {
     text-align: right !important;
+    padding-left: 0px;
   }
 
   .mobile {
