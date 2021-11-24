@@ -194,7 +194,6 @@
     font-size: 18px !important;
   }
   #textbox, #textarea{
-    
     font-size: 12px !important;
   }
 
@@ -221,6 +220,37 @@
 
 }
 
+.speaker, .speaker img{
+  width : 20vw !important;
+}
+
+.img1:hover {
+  content: url('static files/speaker.png');
+}
+.img2:hover {
+  content: url('static files/speaker.png');
+}
+.img3:hover {
+  content: url('static files/speaker.png');
+}
+.img4:hover {
+  content: url('static files/speaker.png');
+}
+.img5:hover {
+  content: url('static files/speaker.png');
+}
+.img6:hover {
+  content: url('static files/speaker.png');
+}
+.img7:hover {
+  content: url('static files/speaker.png');
+}
+.img8:hover {
+  content: url('static files/speaker.png');
+}
+.img9:hover {
+  content: url('static files/speaker.png');
+}
 
 .speaker:hover .speaker-icon {
   background-color: #00B0E0;
