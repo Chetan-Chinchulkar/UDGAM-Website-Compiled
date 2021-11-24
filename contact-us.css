@@ -220,7 +220,7 @@
 
 }
 
-.speaker, .speaker img{
+.speaker, .speaker .speaker__img{
   width : 20vw !important;
 }
 
